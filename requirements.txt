@@ -1,4 +1,4 @@
 Flask==0.9
-markdown==1.0.1
+markdown==1.0.1-7
 tornado==1.2.1
 uWSGI==1.4.4
