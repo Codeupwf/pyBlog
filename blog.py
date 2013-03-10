@@ -11,8 +11,8 @@ from flask import Flask, request, g, redirect, url_for, abort, \
 
 # configuration
 DEBUG = True
-TITLE = 'YANG Yang'
-URL = 'http://yangyang.in/'
+TITLE = 'Wang Fu'
+URL = 'http://wangfu.info/'
 POST_DIR = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'posts'
 RSS_PATH = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'rss.xml'
 
