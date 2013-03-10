@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Markdown语法学习 Part1"
-date: 2013-01-24 13:02
+title: "Markdown语法学习 Part1 "
+date: 2013-03-11 0:59:17
 comments: true
-categories: notes
+categories: Markdown
 ---
+
 #### 一、段落和换行
 
 段落由一个或多个连续的文本组成，由段落前后的一个或多个空行分割开。
