@@ -1,10 +1,9 @@
-{% autoescape None %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<title>{{ title }}</title>
-		<link rel="stylesheet" href="{{ static_url("style.css") }}" type="text/css" media="screen">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" media="screen">
 		<link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
@@ -18,9 +17,9 @@
 						<h1 id="title"><a href="{{ url }}">{{ title }}</a></h1>
 						<div id="description">A BLOG</div>
 						<ul class="right">
-							<li><a href="https://plus.google.com/100204491389909955903">Google+</a></li>
-							<li><a href="https://github.com/MartianZ">GitHub</a></li>
-							<li><a href="https://twitter.com/#!/martian_zhu">Twitter</a></li>
+							<li><a href="[https://plus.google.com/u/0/115115080954335173970">Google+</a></li>
+							<li><a href="https://github.com/Codeupwf">GitHub</a></li>
+							<li><a href="https://twitter.com/codeup_wf">Twitter</a></li>
 						</ul>
 					</div>
 				</div>
@@ -42,21 +41,21 @@
 						</div>
 					</div>
 				</li>
-			{% end %}
+			{% endfor %}
 			</ul>
 		</div> <!--div content-->
 
 		<div id="pagenav">
 			{% if prev %}
 			<a href="/?p={{ prevnum }}" class="prev">上一页</a>
-			{% end %}
+			{% endif %}
 			{% if pnext %}
 			<a href="/?p={{ nextnum }}" class="next">下一页</a>
-			{% end %}
+			{% endif %}
 		</div> <!--div pagenav-->
 		
 		<div id="footer">
-						© MartianZ, All rights reserved.
+						© YANG Yang, released under MIT License.
 		</div> <!--div footer-->
 	
 	
@@ -70,8 +69,8 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33535278-2']);
-  _gaq.push(['_setDomainName', '4321.la']);
+  _gaq.push(['_setAccount', 'UA-22789680-4']);
+  _gaq.push(['_setDomainName', 'wangfu.info']);
   _gaq.push(['_trackPageview']);
 
   (function() {

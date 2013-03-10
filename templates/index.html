@@ -1,10 +1,9 @@
-{% autoescape None %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<title>{{ title }}</title>
-		<link rel="stylesheet" href="{{ static_url("style2.css") }}" type="text/css" media="screen">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}" type="text/css" media="screen">
 		<link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
 	</head>
@@ -13,25 +12,25 @@
 			<header>
 			<hgroup>
 				<h1 id="site-title">
-					<a href="{{ url }}" title="MartianZ">{{ title }}</a>
+					<a href="{{ url }}" title="Wang Fu">{{ title }}</a>
 				</h1>
 				<h2 id="site-description">
 					Here's my blog :)
 				</h2>
 				<h2 class="site-nav">
-					<a href="{{ url }}">首页</a>
+					<a href={{ url }}>首页</a>
 				</h2>
 				<h2 class="site-nav">
 					<a href="#" onclick="javascript:alert('Under Construction!');">照片墙</a>
 				</h2>
 				<h2 class="site-nav">
-					<a href="https://plus.google.com/100204491389909955903">Google+</a>
+					<a href="https://plus.google.com/u/0/115115080954335173970">Google+</a>
 				</h2>
 				<h2 class="site-nav">
-					<a href="https://github.com/MartianZ">GitHub</a>
+					<a href="https://github.com/Codeupwf">GitHub</a>
 				</h2>
 				<h2 class="site-nav">
-					<a href="https://twitter.com/#!/martian_zhu">Twitter</a>
+					<a href="https://twitter.com/codeup_wf">Twitter</a>
 				</h2>
 			</hgroup>
 			</header>
@@ -53,21 +52,21 @@
 					</div>
 					
 				</article>
-				{% end %}
+				{% endfor %}
 				<nav id="nav-below">
 					{% if pnext %}
 					<div class="nav-previous"><a href="/?p={{ nextnum }}"><span class="meta-nav">←</span> Older posts</a></div>
-					{% end %}
+					{% endif %}
 					{% if prev %}
 					<div class="nav-next"><a href="/?p={{ prevnum }}">Newer posts <span class="meta-nav">→</span></a></div>
-					{% end %}
+					{% endif %}
 				</nav>
 			</div>
 		</div>
 		
 		<footer>
 			<div class="div-footer">
-							Powered by <a href="https://github.com/MartianZ">MartianZ-BLOG</a>
+							Powered by <a href="https://github.com/Codeupwf">Codeup</a>
 			</div>
 		</footer>
 		</div>
@@ -76,8 +75,8 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33535278-2']);
-  _gaq.push(['_setDomainName', '4321.la']);
+  _gaq.push(['_setAccount', 'UA-22789680-4']);
+  _gaq.push(['_setDomainName', 'wangfu.info']);
   _gaq.push(['_trackPageview']);
 
   (function() {

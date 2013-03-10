@@ -1,10 +1,9 @@
-{% autoescape None %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<title>{{ title }} - {{ article["title"] }}</title>
-		<link rel="stylesheet" href="{{ static_url("style2.css") }}" type="text/css" media="screen">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}" type="text/css" media="screen">
 		<link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
 	</head>
@@ -13,7 +12,7 @@
 			<header>
 			<hgroup>
 				<h1 id="site-title">
-					<a href="{{ url }}" title="MartianZ">{{ title }}</a>
+					<a href="{{ url }}" title="Wang Fu">{{ title }}</a>
 				</h1>
 				<h2 id="site-description">
 					Here's my blog :)
@@ -25,13 +24,13 @@
 					<a href="#" onclick="javascript:alert('Under Construction!');">照片墙</a>
 				</h2>
 				<h2 class="site-nav">
-					<a href="https://plus.google.com/100204491389909955903">Google+</a>
+					<a href="https://plus.google.com/u/0/115115080954335173970">Google+</a>
 				</h2>
 				<h2 class="site-nav">
-					<a href="https://github.com/MartianZ">GitHub</a>
+					<a href="https://github.com/Codeupwf">GitHub</a>
 				</h2>
 				<h2 class="site-nav">
-					<a href="https://twitter.com/#!/martian_zhu">Twitter</a>
+					<a href="https://twitter.com/codeup_wf">Twitter</a>
 				</h2>
 			</hgroup>
 			</header>
@@ -59,7 +58,7 @@
 				<div id="disqus_thread"></div>
 				
 				<script type="text/javascript">
-            					var disqus_shortname = 'martian-octopress-blog'; 
+            					var disqus_shortname = 'blog4wangfu'; 
             						(function() {
                 						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
                 						dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -74,7 +73,7 @@
 		
 		<footer>
 			<div class="div-footer">
-							Powered by <a href="https://github.com/MartianZ">MartianZ-BLOG</a>
+							Powered by <a href="https://github.com/Codeupwf">Codeup</a>
 			</div>
 		</footer>
 		</div>
@@ -83,8 +82,8 @@
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33535278-2']);
-  _gaq.push(['_setDomainName', '4321.la']);
+  _gaq.push(['_setAccount', 'UA-22789680-4']);
+  _gaq.push(['_setDomainName', 'wangfu.info']);
   _gaq.push(['_trackPageview']);
 
   (function() {
