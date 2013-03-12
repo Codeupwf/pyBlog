@@ -1,0 +1,1 @@
+uwsgi -s 192.168.1.101:5000 --socket-protocol http --module blog --callable app --catch-exceptions

@@ -1,6 +1,3 @@
-#!/usr/bin/env python2
-# -*- coding:utf-8 -*-
-
 import os
 import codecs
 import datetime
@@ -20,7 +17,6 @@ RSS_PATH = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'rss.xml'
 app = Flask(__name__)
 app.config.from_object(__name__)
 app.config.from_envvar('SETTINGS', silent=True)
-
 
 def articleFileRender(filePath):
     f = codecs.open(filePath, mode='r', encoding='utf-8')
@@ -48,7 +44,7 @@ def articleFileRender(filePath):
     if title:
         ret['title'] = title
         ret['date'] = date
-        ret['content'] = Markup(markdown.markdown(content))
+        ret['content'] = Markup(markdown.markdown(content,extensions=['codehilite(guess_lang=False)','fenced_code']))
         ret['name'] = filePath.split(os.sep)[-1].split('.')[0]
     return ret
 

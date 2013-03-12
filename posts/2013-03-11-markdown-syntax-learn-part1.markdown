@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Markdown语法学习 Part1
-date: 2013-03-11 0:59:17
+title: "Markdown语法学习 Part1"
+date: 2013-03-11 00:59:17
 comments: true
 categories: Markdown
 ---
