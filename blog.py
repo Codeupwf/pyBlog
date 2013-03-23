@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
 import os
 import codecs
 import datetime
+import time
 import PyRSS2Gen
 import markdown
 from flask import Flask, request, g, redirect, url_for, abort, \
@@ -55,7 +57,8 @@ def RSSMaker():
     fileList = []
     files = os.listdir(postDir)
     for f in files:
-        fileList.append(postDir + os.sep + f)
+        filePath = postDir + os.sep + f
+        fileList.append((time.ctime(os.path.getctime(filePath)), filePath))
     fileList.sort(reverse=True)
     for singleFile in fileList:
         article = articleFileRender(singleFile)
@@ -92,10 +95,14 @@ def index():
     files = os.listdir(postDir)
     p = int(request.args.get('p', '0'))
     for f in files:
-        fileList.append(postDir + os.sep + f)
+        filePath = postDir + os.sep + f
+        # 将(创建时间,文件名)的元组插入文件列表中
+        fileList.append((time.ctime(os.path.getctime(filePath)), filePath))
+    # 对文件列表进行逆序排列，排列时使用元组第一个值进行排列，得到按文件创建时间逆序排列的文件列表
     fileList.sort(reverse=True)
     for singleFile in fileList[p:p + 3]:
-        article = articleFileRender(singleFile)
+        # 获取文件内容时需要使用元组第二个元素，即文件路径。
+        article = articleFileRender(singleFile[1])
         if article:
             articles.append(article)
     if p > 2:
