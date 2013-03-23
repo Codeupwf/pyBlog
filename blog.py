@@ -61,7 +61,7 @@ def RSSMaker():
         fileList.append((time.ctime(os.path.getctime(filePath)), filePath))
     fileList.sort(reverse=True)
     for singleFile in fileList:
-        article = articleFileRender(singleFile)
+        article = articleFileRender(singleFile[1])
         if article:
             articles.append(article)
     rssItems = []
