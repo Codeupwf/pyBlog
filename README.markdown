@@ -1,23 +1,22 @@
 
 # Codeup-Blog
 
-Codeup-Blog 是[Codeup][3]在学习Python过程中，借鉴[MartianZ][1]和[YANG Yang][2]同学的博客系统，进行融合加工，并增加了我自己的理解以及修改。
+Codeup-Blog 是[Codeup][3]在学习Python过程中，借鉴[MartianZ][1]和[YANG Yang][2]同学的博客系统，进行融合加工，并增加了我自己的理解以及修改，系统的主要构架是MartianZ同学的，我做的修改主要是使用了不同的组件，并且增加了代码亮显的功能。
 
 [1]: https://github.com/MartianZ "MartianZ"
-[2]: http://yangyangin "YANG Yang"
+[2]: http://yangyang.in "YANG Yang"
 [3]: https://github.com/Codeupwf "Codeup"
 
 ### 依赖：
 
-	python 2.6 +
-	pip
+	主要依赖的是python相关，
+	apt-get install python
+	apt-get install python-pip
 
-	pip install flask
-	pip install markdown
-	pip install PyRSS2Gen
-
-	同时注意根目录下的requirements.txt文件，此文件同样包含依赖的组件。
-	主要有uWSGI和pygments
+	注意根目录下的requirements.txt文件，此文件包含依赖的组件。
+	主要有uWSGI和pygments、Flask等。
+	可以通过pip install -r requirements.txt来批量安装.
+	(注意有些组件的安装依赖c编译器，请保证服务器上有相关编译器。)
 
 ### 使用：
 
@@ -33,12 +32,12 @@ Codeup-Blog 是[Codeup][3]在学习Python过程中，借鉴[MartianZ][1]和[YANG
 
 2. 执行start_exe.sh
 
-目前本博客架设在OpenShift上，详细架设方式请参考[YANG Yang][1]的博文介绍
+目前本博客架设在OpenShift上，详细架设方式请参考[YANG Yang][4]的博文介绍
 
-[1]: http://yangyang.in/article/2013-01-26-setting-a-py27-environment-on-openshift-diy-app-type "在 OpenShift 平台上自定义 Python 2.7 运行环境"
+[4]: http://yangyang.in/article/2013-01-26-setting-a-py27-environment-on-openshift-diy-app-type "在 OpenShift 平台上自定义 Python 2.7 运行环境"
 
 ### 样例
 
-我的博客[WangFu][1]。
+我的博客[WangFu][5]。
 
-[1]: http://blog.wangfu.info "Wang Fu"
+[5]: http://blog.wangfu.info "Wang Fu"
