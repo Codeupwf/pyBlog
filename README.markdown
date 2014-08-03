@@ -34,7 +34,7 @@ Codeup-Blog 是[Codeup][3]在学习Python过程中，借鉴[MartianZ][1]和[YANG
 
 目前本博客架设在OpenShift上，详细架设方式请参考[YANG Yang][4]的博文介绍
 
-[4]: http://yangyang.in/article/2013-01-26-setting-a-py27-environment-on-openshift-diy-app-type "在 OpenShift 平台上自定义 Python 2.7 运行环境"
+[4]: http://yangyang.in/2014/01/25/%E5%9C%A8-openshift-%E5%B9%B3%E5%8F%B0%E4%B8%8A%E8%87%AA%E5%AE%9A%E4%B9%89-python-27-%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83/ "在 OpenShift 平台上自定义 Python 2.7 运行环境"
 
 ### 样例
 

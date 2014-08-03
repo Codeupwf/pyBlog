@@ -14,13 +14,13 @@
 			<header>
 			<hgroup>
 				<h1 id="site-title">
-					<a href="{{ url }}" title="Wang Fu">{{ title }}</a>
+					<a href="http://blog.wangfu.info" title="Wang Fu">{{ title }}</a>
 				</h1>
 				<h2 id="site-description">
 					Here's my blog :)
 				</h2>
 				<h2 class="site-nav">
-					<a href={{ url }}>首页</a>
+					<a href=http://wangfu.info/resume.html>首页</a>
 				</h2>
 				<h2 class="site-nav">
 					<!-- <a href="#" onclick="javascript:alert('Under Construction!');">照片墙</a> -->
@@ -57,10 +57,10 @@
 				{% endfor %}
 				<nav id="nav-below">
 					{% if pnext %}
-					<div class="nav-previous"><a href="/?p={{ nextnum }}"><span class="meta-nav">←</span> Older posts</a></div>
+					<div class="nav-previous"><a href="/?p={{ nextnum }}"><span class="meta-nav">←</span>上一页</a></div>
 					{% endif %}
 					{% if prev %}
-					<div class="nav-next"><a href="/?p={{ prevnum }}">Newer posts <span class="meta-nav">→</span></a></div>
+					<div class="nav-next"><a href="/?p={{ prevnum }}">下一页<span class="meta-nav">→</span></a></div>
 					{% endif %}
 				</nav>
 			</div>

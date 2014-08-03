@@ -47,15 +47,17 @@
 
 		<div id="pagenav">
 			{% if prev %}
-			<a href="/?p={{ prevnum }}" class="prev">上一页</a>
+			<a href="/?p={{ prevnum }}" class="prev">Older posts</a>
 			{% endif %}
 			{% if pnext %}
-			<a href="/?p={{ nextnum }}" class="next">下一页</a>
+			<a href="/?p={{ nextnum }}" class="next">Newer posts</a>
 			{% endif %}
 		</div> <!--div pagenav-->
 		
 		<div id="footer">
-						© YANG Yang, released under MIT License.
+			<div class="div-footer">
+							Powered by <a href="https://github.com/Codeupwf">Codeup</a>
+			</div>
 		</div> <!--div footer-->
 	
 	

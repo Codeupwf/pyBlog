@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Unix 下的文件连接
+title: "Unix 下的文件连接"
 date: 2013-12-01 00:39:11
 comments: true
 categories: Unix CLI
@@ -49,5 +49,3 @@ categories: Unix CLI
 ps: Mac系统下的替身，其实就是一种硬连接。
 
    [1]: http://zh.wikipedia.org/wiki/%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5 "符号链接"
-
-

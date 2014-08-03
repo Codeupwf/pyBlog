@@ -9,7 +9,7 @@ from flask import Flask, request, g, redirect, url_for, abort, \
 # configuration
 DEBUG = True
 TITLE = 'Wang Fu'
-URL = 'http://wangfu.info/'
+URL = 'http://blog.wangfu.info'
 POST_DIR = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'posts'
 RSS_PATH = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'rss.xml'
 
