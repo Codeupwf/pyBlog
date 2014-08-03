@@ -1,6 +1,6 @@
 Flask==0.9
 markdown
 tornado==1.2.1
-uWSGI==1.4.9
+uWSGI==1.4.4
 PyRSS2Gen
 pygments
