@@ -62,6 +62,7 @@ e.g.
 	<h2>This is an H2 in a blockquote</h2>
 	</blockquote>
 
+--more--
 #### 四、强调
 
 在要被强调的内容前后增加`*`和`_`。

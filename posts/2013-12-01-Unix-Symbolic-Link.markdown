@@ -29,6 +29,7 @@ categories: Unix CLI
 	Codeup-Mac:bin Codeup$ ls -l grep subl
 	-rwxr-xr-x  3 root  wheel  30096 10 24 20:09 grep
 	lrwxr-xr-x  1 root  wheel     64 12  1 00:13 subl -> /Applications/Sublime Text
+--more--
 
 #### 文件连接
 

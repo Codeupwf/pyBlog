@@ -18,6 +18,8 @@ categories: Unix CLI
 
 这有点宏定义的感觉~		
 
+--more--
+
 所以，下面这段代码是真的可以用的！
 
 `abc.h`

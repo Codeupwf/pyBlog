@@ -12,14 +12,17 @@ TITLE = 'Wang Fu'
 URL = 'http://blog.wangfu.info'
 POST_DIR = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'posts'
 RSS_PATH = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'rss.xml'
+STR_MORE_BEGIN = '[More...]('
+STR_MORE_END = ')       '
 
 # create app
 app = Flask(__name__)
 app.config.from_object(__name__)
 app.config.from_envvar('SETTINGS', silent=True)
 
-def articleFileRender(filePath):
+def articleFileRender(filePath, showMore):
     f = codecs.open(filePath, mode='r', encoding='utf-8')
+    link = app.config["URL"] + "/article/" + filePath.split(os.sep)[-1].split('.')[0]
     lines = []
     try:
         lines = f.readlines()
@@ -40,7 +43,13 @@ def articleFileRender(filePath):
             break
     content = u''
     for line in lines[index:]:
-        content += line
+        if line.find('--more--') == 0:
+            if showMore:                             
+                continue
+            else:
+                content += STR_MORE_BEGIN + link +STR_MORE_END
+                break
+        content += line    
     if title:
         ret['title'] = title
         ret['date'] = date
@@ -58,7 +67,7 @@ def RSSMaker():
         fileList.append(postDir + os.sep + f)
     fileList.sort(reverse=True)
     for singleFile in fileList:
-        article = articleFileRender(singleFile)
+        article = articleFileRender(singleFile, True)
         if article:
             articles.append(article)
     rssItems = []
@@ -95,7 +104,7 @@ def index():
         fileList.append(postDir + os.sep + f)
     fileList.sort(reverse=True)
     for singleFile in fileList[p:p + 3]:
-        article = articleFileRender(singleFile)
+        article = articleFileRender(singleFile, False)
         if article:
             articles.append(article)
     if p > 2:
@@ -113,7 +122,7 @@ def index():
 def article(articleID):
     postPath = app.config["POST_DIR"] + os.sep + \
         articleID.replace('.', '') + '.markdown'
-    article = articleFileRender(postPath)
+    article = articleFileRender(postPath, True)
     return render_template("article.html", title=app.config['TITLE'], url=app.config['URL'], article=article)
 
 

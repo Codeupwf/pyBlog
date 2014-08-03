@@ -39,6 +39,7 @@ int main(int argc,char *argv[])
     return 0;
 }
 ```
+--more--
 #####二、详细说明
 
 以前用wordpress写博客的时候，使用的是SyntaxHighlighter插件实现的代码高亮。	
