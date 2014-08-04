@@ -28,7 +28,7 @@ E-mail：<codeup.wf@gmail.com>
 5. 熟悉敏捷开发流程，了解项目管理基本流程
 
 ####熟悉工具
-+ 编程软件：Visual Studio/Eclipse /Vim		
++ 编程软件：Visual Studio/Eclipse/Vim		
 + 数据库：  SQL Server/Sybase		
 + 操作系统：Solaris/Windows/Mac		
 + 英语水平：良好		
