@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "头文件是如何参与编译的"
-date: 2014-08-03
+date: 2014-08-03 00:00:00
 comments: true
 categories: Unix CLI
 ---
