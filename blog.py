@@ -88,7 +88,7 @@ def article(articleID):
     postPath = app.config["POST_DIR"] + os.sep + \
         articleID.replace('.', '') + '.markdown'
     article = articleFileRender(postPath, True)
-    return render_template("article.html", title=app.config['TITLE'], url=app.config['URL'], article=article)
+    return render_template("singleArticle.html", title=app.config['TITLE'], url=app.config['URL'], article=article)
 
 
 @app.errorhandler(404)

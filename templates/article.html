@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta http-equiv = "content-type" content="text/html; charset=utf-8">
 		<title>{{ title }} - {{ article["title"] }}</title>
-		<link rel="Shortcut Icon"  href="/static/favicon.ico">
-        		<link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}" type="text/css" media="screen">
-        		<link rel="stylesheet" href="{{ url_for('static', filename='style_code.css') }}" type="text/css" media="screen">
+		<link rel = "Shortcut Icon"  href="/static/favicon.ico">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}" type="text/css" media="screen">
+		<link rel="stylesheet" href="{{ url_for('static', filename='style_code.css') }}" type="text/css" media="screen">
 		<link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
 	</head>
@@ -13,27 +13,27 @@
 		<div id="content">
 			<header>
 			<hgroup>
-				<h1 id="site-title">
+<!-- 				<h1 id="site-title">
 					<a href="http://wangfu.info/resume.html" title="Wang Fu">{{ title }}</a>
-				</h1>
-				<h2 id="site-description">
+				</h1> -->
+<!-- 				<h2 id="site-description">
 					Here's my blog :)
-				</h2>
-				<h2 class="site-nav">
-					<a href="{{ url }}">Home</a>
-				</h2>
+				</h2> -->
+				<!-- <h2 class="site-nav"> -->
+					<a href = "{{ url }}">Home</a>
+				<!-- </h2> -->
 				<!-- <h2 class="site-nav">
 					<a href="#" onclick="javascript:alert('Under Construction!');">照片墙</a>
 				</h2> -->
-				<h2 class="site-nav">
-					<a href="https://plus.google.com/u/0/115115080954335173970">Google+</a>
-				</h2>
-				<h2 class="site-nav">
-					<a href="https://github.com/Codeupwf">GitHub</a>
-				</h2>
-				<h2 class="site-nav">
-					<a href="https://twitter.com/codeup_wf">Twitter</a>
-				</h2>
+				<!-- <h2 class="site-nav"> -->
+					<a href = "https://plus.google.com/u/0/115115080954335173970">Google+</a>
+				<!-- </h2> -->
+				<!-- <h2 class="site-nav"> -->
+					<a href = "https://github.com/Codeupwf">GitHub</a>
+				<!-- </h2> -->
+				<!-- <h2 class="site-nav"> -->
+					<a href = "https://twitter.com/codeup_wf">Twitter</a>
+				<!-- </h2> -->
 			</hgroup>
 			</header>
 		
@@ -94,7 +94,7 @@
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    var s  = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
 </script>
