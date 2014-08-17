@@ -30,7 +30,7 @@ def RSSMaker():
     files = os.listdir(postDir)
     for f in files:
         fileList.append(postDir + os.sep + f)
-    fileList.sort(reverse=True)
+    fileList = sortArticleListByTime(fileList, reverse = True)
     for singleFile in fileList:
         article = articleFileRender(singleFile, True)
         if article:
@@ -104,4 +104,4 @@ def RSSRender():
 
 if __name__ == '__main__':
     RSSMaker()
-    #app.run()
+    app.run(debug = True)

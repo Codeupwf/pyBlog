@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<rss version="2.0"><channel><title>Wang Fu</title><link>http://wangfu.info/</link><description></description><lastBuildDate>Sun, 03 Aug 2014 08:05:20 GMT</lastBuildDate><generator>PyRSS2Gen-1.0.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Vim&#20010;&#20154;&#29992;&#37197;&#32622;</title><link>http://wangfu.info//article/2013-03-31-my-vim-config-file</link><description>&lt;h3&gt;Vim &#20010;&#20154;&#29992;&#37197;&#32622;&lt;/h3&gt;
+<rss version="2.0"><channel><title>Wang Fu</title><link>http://blog.wangfu.info</link><description></description><lastBuildDate>Sun, 17 Aug 2014 03:43:59 GMT</lastBuildDate><generator>PyRSS2Gen-1.0.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>&#22836;&#25991;&#20214;&#26159;&#22914;&#20309;&#21442;&#19982;&#32534;&#35793;&#30340;</title><link>http://blog.wangfu.info/article/2014-08-03-include-file-in-compile</link><description>&lt;h3&gt;&#22836;&#25991;&#20214;&#26159;&#22914;&#20309;&#21442;&#19982;&#32534;&#35793;&#30340;&lt;/h3&gt;
+&lt;p&gt;&#26368;&#36817;&#22312;&#30475;C&#35821;&#35328;&#30340;&#32534;&#35793;&#19982;&#38142;&#25509;&#30340;&#20869;&#37096;&#23454;&#29616;&#65292;&#36825;&#26159;&#27604;&#36739;&#22522;&#30784;&#30340;&#20869;&#23481;&#65292;&#20294;&#26159;&#21448;&#24448;&#24448;&#24456;&#23481;&#26131;&#34987;&#24573;&#35270;&#65292;&#22240;&#20026;&#21508;&#31181;IDE&#23588;&#20854;&#26159;VS&#30340;&#24378;&#22823;&#38598;&#25104;&#21151;&#33021;&#23558;&#32534;&#35793;&#21644;&#38142;&#25509;&#30340;&#23454;&#29616;&#32473;&#38544;&#34255;&#20102;&#12290;      &lt;/p&gt;
+&lt;p&gt;&#33267;&#20110;&#32534;&#35793;&#19982;&#38142;&#25509;&#30340;&#20855;&#20307;&#36807;&#31243;&#24182;&#38750;&#26412;&#25991;&#20869;&#23481;&#65292;&#26412;&#25991;&#23454;&#38469;&#35201;&#35762;&#30340;&#26159;&#25105;&#22312;&#33258;&#23398;&#26102;&#21457;&#29616;&#30340;&#19968;&#20010;&#26377;&#36259;&#20869;&#23481;&#65292;&#22836;&#25991;&#20214;&#30340;&#32534;&#35793;&#21442;&#19982;&#38382;&#39064;&#12290;       &lt;/p&gt;
+&lt;p&gt;&#26377;&#20123;&#25991;&#31456;&#35828;&#36807;&#22836;&#25991;&#20214;&#19981;&#21442;&#19982;&#32534;&#35793;&#65292;&#20854;&#23454;&#20005;&#26684;&#26469;&#35828;&#22836;&#25991;&#20214;&#26159;&#21442;&#19982;&#32534;&#35793;&#30340;&#12290;   &lt;br /&gt;
+&#22312;&#39044;&#32534;&#35793;&#28304;&#25991;&#20214;&#30340;&#26102;&#20505;&#65292;&#20961;&#26159;&#36935;&#21040;#include&lt;XX&gt;&#30340;&#26102;&#20505;&#65292;&#23601;&#20250;&#25226;XX&#30340;&#25991;&#26412;&#20869;&#23481;&#20840;&#37096;&#22797;&#21046;&#21040;&#30456;&#24212;&#30340;&#20301;&#32622;&#12290;      &lt;br /&gt;
+&#28982;&#21518;&#34987;&#32534;&#35793;&#30340;&#28304;&#25991;&#20214;&#20854;&#23454;&#26159; &#12304;&#22836;&#25991;&#20214;&#25991;&#26412;&#20869;&#23481;&#12305;+&#12304;&#28304;&#25991;&#20214;&#25991;&#26412;&#20869;&#23481;&#12305;        &lt;/p&gt;
+&lt;p&gt;&#36825;&#26377;&#28857;&#23439;&#23450;&#20041;&#30340;&#24863;&#35273;~      &lt;/p&gt;
+&lt;p&gt;&#25152;&#20197;&#65292;&#19979;&#38754;&#36825;&#27573;&#20195;&#30721;&#26159;&#30495;&#30340;&#21487;&#20197;&#29992;&#30340;&#65281;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;abc.h&lt;/code&gt;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;main.cpp&lt;/code&gt;  &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#include &amp;lt;iostream&amp;gt;&lt;/span&gt;
+&lt;span class="cp"&gt;#include &amp;lt;string&amp;gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="n"&gt;include&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;abc.h&amp;quot;&lt;/span&gt;
+    &lt;span class="p"&gt;};&lt;/span&gt;
+        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="&#31034;&#20363;" src="http://codeup.org/wp-content/uploads/2012/12/%E5%A4%B4%E6%96%87%E4%BB%B6%E7%BC%96%E8%AF%91-1024x553.png" /&gt;&lt;/p&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2014-08-03-include-file-in-compile</guid><pubDate>Sun, 03 Aug 2014 00:00:00 GMT</pubDate></item><item><title>Unix &#19979;&#30340;&#25991;&#20214;&#36830;&#25509;</title><link>http://blog.wangfu.info/article/2013-12-01-Unix-Symbolic-Link</link><description>&lt;h3&gt;Unix &#19979;&#30340;&#25991;&#20214;&#36830;&#25509;&lt;/h3&gt;
+&lt;h4&gt;&#23454;&#20363;&lt;/h4&gt;
+&lt;p&gt;&#20170;&#22825;&#22240;&#20026;&#26576;&#20123;&#21407;&#22240;&#65292;&#38656;&#35201;&#36890;&#36807;&#21629;&#20196;&#34892;&#26469;&#29992;sublime&#25171;&#24320;&#26576;&#20010;&#38544;&#34255;&#25991;&#20214;&#65292;&#20294;&#26159;sublime&#30340;&#21629;&#20196;&#24182;&#19981;&#22312;usr/bin&#30446;&#24405;&#19979;&#65292;&#25152;&#20197;&#26080;&#27861;&#20351;&#29992;&#31616;&#27905;&#30340;&#21629;&#20196;&#34892;&#26469;&#25171;&#24320;&#26576;&#20010;&#25991;&#20214;&#12290;
+&#21518;&#26469;&#26597;&#20102;&#19968;&#20123;&#36164;&#26009;&#65292;&#21457;&#29616;sublime text 2&#30340;&#21629;&#20196;&#34892;&#24037;&#20855;&#22312;&#36825;&#65306;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&#22914;&#26524;&#20320;&#19981;&#23244;&#40635;&#28902;&#30340;&#35805;&#65292;&#21487;&#20197;&#27599;&#27425;&#37117;&#29992;&#36825;&#20010;&#21629;&#20196;&#26469;&#25171;&#24320;&#25991;&#20214;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl XXX
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&#20854;&#23454;&#25105;&#20204;&#21487;&#20197;&#36890;&#36807;Unix&#33258;&#24102;&#30340;&#25991;&#20214;&#36830;&#25509;&#21151;&#33021;&#65292;&#22312;&lt;code&gt;usr/bin&lt;/code&gt;&#30446;&#24405;&#19979;&#21019;&#24314;&#19968;&#20010;&lt;code&gt;subl&lt;/code&gt;&#30340;&#36719;&#36830;&#25509;&#25991;&#20214;&#65292;&#36825;&#26679;&#25105;&#20204;&#23601;&#21487;&#20197;&#30452;&#25509;&#36890;&#36807;&#21629;&#20196;&#34892;&#36755;&#20837;&lt;code&gt;subl XXX&lt;/code&gt;&#26469;&#23454;&#29616;&#20351;&#29992;Sublime&#25171;&#24320;&#25351;&#23450;&#25991;&#20214;&#30340;&#30446;&#30340;&#12290;&lt;/p&gt;
+&lt;p&gt;&#20808;&#25226;&#21019;&#24314;&#36719;&#36830;&#25509;&#30340;&#21629;&#20196;&#20889;&#22312;&#36825;&#37324;&#65306;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/bin/subl
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&#36825;&#26679;&#65292;&#25105;&#20204;&#23601;&#22312;&lt;code&gt;/usr/bin&lt;/code&gt;&#30446;&#24405;&#19979;&#21019;&#24314;&#20102;&#19968;&#20010;&lt;code&gt;subl&lt;/code&gt;&#25991;&#20214;&#65292;&#36825;&#20010;&#25991;&#20214;&#26159;&#19968;&#20010;&#25351;&#21521;&lt;code&gt;/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl&lt;/code&gt;&#30340;&#36719;&#36830;&#25509;&#12290;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;Codeup-Mac:bin Codeup$ ls -l grep subl
+-rwxr-xr-x  3 root  wheel  30096 10 24 20:09 grep
+lrwxr-xr-x  1 root  wheel     64 12  1 00:13 subl -&amp;gt; /Applications/Sublime Text
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h4&gt;&#25991;&#20214;&#36830;&#25509;&lt;/h4&gt;
+&lt;p&gt;&#25105;&#20204;&#20877;&#22238;&#36807;&#22836;&#26469;&#35299;&#37322;&#19968;&#19979;&#21019;&#24314;&#25991;&#20214;&#36830;&#25509;&#30340;&#21629;&#20196;&lt;code&gt;ln&lt;/code&gt;&#12290;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;ln [-Ffhinsv] source_file target_file
+-f &#24314;&#31435;&#26102;&#65292;&#23558;&#21516;&#26723;&#26696;&#21517;&#21024;&#38500;&#12290;
+-i &#21024;&#38500;&#21069;&#36827;&#34892;&#35810;&#38382;&#12290;
+-s &#24314;&#31435;&#20174; source_file&#21040;target_file&#30340;&#36719;&#36830;&#25509;&#12290;
+&#26080;&#21487;&#36873;&#21442;&#25968; &#24314;&#31435;&#20174;source_file&#21040;target_file&#30340;&#30828;&#38142;&#25509;&#12290;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&#25105;&#20204;&#20027;&#35201;&#20851;&#27880;&#26368;&#21518;&#20004;&#31181;&#24773;&#20917;&#65306;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ln -s a b &#21019;&#24314;&#25351;&#21521;a&#30340;&#36719;&#36830;&#25509;&#25991;&#20214;b &#36719;&#36830;&#25509;&#31867;&#20284;&#24555;&#25463;&#26041;&#24335;&#30340;&#27010;&#24565;&#65292;&#25991;&#20214;&#20869;&#23481;&#23454;&#38469;&#21482;&#26377;&#19968;&#20010;&#25351;&#21521;&#28304;&#25991;&#20214;&#30340;&#38142;&#25509;&#12290;&#21024;&#38500;&#28304;&#25991;&#20214;&#21518;&#20250;&#23548;&#33268;&#36719;&#36830;&#25509;&#25991;&#20214;&#25351;&#21521;&#19981;&#23384;&#22312;&#30340;&#25991;&#20214;&#12290;&#36719;&#36830;&#25509;&#21448;&#21483;&lt;em&gt;&#31526;&#21495;&#36830;&#25509;&lt;/em&gt;&#12290;&lt;/li&gt;
+&lt;li&gt;ln a b    &#21019;&#24314;&#25351;&#21521;a&#30340;&#30828;&#38142;&#25509;&#25991;&#20214;b &#30828;&#36830;&#25509;&#31867;&#20284;C++&#20013;&#30340;&#26234;&#33021;&#25351;&#38024;&#30340;&#27010;&#24565;&#65292;&#26159;&#23545;&#26576;&#20010;&#25991;&#20214;&#30340;&#35745;&#25968;&#24341;&#29992;&#12290;&#23545;&#30828;&#36830;&#25509;&#25991;&#20214;&#30340;&#20462;&#25913;&#65292;&#20250;&#23548;&#33268;&#28304;&#25991;&#20214;&#30340;&#21464;&#21270;&#65292;&#25152;&#26377;&#23545;&#27492;&#25991;&#20214;&#30340;&#30828;&#36830;&#25509;&#25991;&#20214;&#37117;&#20250;&#21464;&#21270;&#12290;&#24403;&#21024;&#38500;&#19968;&#20010;&#30828;&#36830;&#25509;&#25991;&#20214;&#26102;&#65292;&#25991;&#20214;&#24182;&#19981;&#20250;&#30495;&#30340;&#21024;&#38500;&#65292;&#21482;&#26377;&#25152;&#26377;&#25351;&#21521;&#27492;&#25991;&#20214;&#30340;&#30828;&#36830;&#25509;&#37117;&#34987;&#21024;&#38500;&#21518;&#65292;&#25991;&#20214;&#25165;&#20250;&#34987;&#21024;&#38500;&#65288;&#30495;&#30340;&#19982;&#26234;&#33021;&#25351;&#38024;&#30340;&#27010;&#24565;&#24456;&#31867;&#20284;&#65289;&#12290;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&#20851;&#20110;&#31526;&#21495;&#36830;&#25509;&#30340;&#26356;&#35814;&#32454;&#20869;&#23481;&#65292;&#21442;&#35265;&lt;a href="http://zh.wikipedia.org/wiki/%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5" title="&#31526;&#21495;&#38142;&#25509;"&gt;Wiki&lt;/a&gt;   &lt;br /&gt;
+ps: Mac&#31995;&#32479;&#19979;&#30340;&#26367;&#36523;&#65292;&#20854;&#23454;&#23601;&#26159;&#19968;&#31181;&#30828;&#36830;&#25509;&#12290;&lt;/p&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2013-12-01-Unix-Symbolic-Link</guid><pubDate>Sun, 01 Dec 2013 00:39:00 GMT</pubDate></item><item><title>Vim&#20010;&#20154;&#29992;&#37197;&#32622;</title><link>http://blog.wangfu.info/article/2013-03-31-my-vim-config-file</link><description>&lt;h3&gt;Vim &#20010;&#20154;&#29992;&#37197;&#32622;&lt;/h3&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt;&amp;quot;&#35821;&#27861;&#39640;&#20142;
 if has(&amp;quot;syntax&amp;quot;)
   syntax on
@@ -53,10 +126,10 @@ set bufhidden=hide
 &lt;h3&gt;&#23384;&#25918;&#20301;&#32622;&lt;/h3&gt;
 &lt;p&gt;&#23558;&#20197;&#19978;&#20869;&#23481;&#20445;&#23384;&#20026;&lt;code&gt;.vimrc&lt;/code&gt;&#25991;&#20214;&#65292;&#24182;&#20445;&#23384;&#22312;&lt;code&gt;~/&lt;/code&gt;&#30446;&#24405;&#19979;&#65292;&#21363;&#29992;&#25143;&#26681;&#30446;&#24405;&#19979;&#12290;   &lt;br /&gt;
 &#25105;&#30340;&#23384;&#25918;&#20301;&#32622;&#22914;&#19979;&#65306;
-&lt;img alt="my config file" src="https://lh6.googleusercontent.com/-ld9j4KknEHI/UVhY4uIZKnI/AAAAAAAAAmk/WtqKYe3-Fiw/s684/vimrc.png" title="my vim config file .vimrc" /&gt;&lt;/p&gt;</description><guid isPermaLink="true">http://wangfu.info//article/2013-03-31-my-vim-config-file</guid><pubDate>Sun, 31 Mar 2013 23:15:00 GMT</pubDate></item><item><title>&#20026;&#33258;&#24049;&#30340;&#32593;&#31449;&#28155;&#21152;&#22270;&#26631;Icon</title><link>http://wangfu.info//article/2013-03-23-2-add-favicon-icon-to-site</link><description>&lt;h3&gt;&#20026;&#33258;&#24049;&#30340;&#32593;&#31449;&#28155;&#21152;&#22270;&#26631;&lt;/h3&gt;
+&lt;img alt="my config file" src="https://lh6.googleusercontent.com/-ld9j4KknEHI/UVhY4uIZKnI/AAAAAAAAAmk/WtqKYe3-Fiw/s684/vimrc.png" title="my vim config file .vimrc" /&gt;&lt;/p&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2013-03-31-my-vim-config-file</guid><pubDate>Sun, 31 Mar 2013 23:15:00 GMT</pubDate></item><item><title>&#20026;&#33258;&#24049;&#30340;&#32593;&#31449;&#28155;&#21152;&#22270;&#26631;Icon</title><link>http://blog.wangfu.info/article/2013-03-23-2-add-favicon-icon-to-site</link><description>&lt;h3&gt;&#20026;&#33258;&#24049;&#30340;&#32593;&#31449;&#28155;&#21152;&#22270;&#26631;&lt;/h3&gt;
 &lt;p&gt;&#25105;&#36825;&#37324;&#35828;&#30340;&#22270;&#26631;&#26159;&#25351;&#32593;&#31449;&#22312;&#25910;&#34255;&#22841;&#25110;&#32773;&#26631;&#31614;&#39029;&#20013;&#26631;&#39064;&#24038;&#20391;&#30340;&#23567;&#22270;&#26631;&#12290;&lt;br /&gt;
 &#33267;&#20110;&#22270;&#26631;&#30340;&#21046;&#20316;&#36825;&#37324;&#23601;&#19981;&#35828;&#20102;&#65292;&#38543;&#20415;&#25214;&#19996;&#35199;&#25630;&#19968;&#19979;&#23601;&#21487;&#20197;&#12290;&lt;/p&gt;
-&lt;p&gt;&#22270;&#26631;&#30340;&#23610;&#23544;&#26368;&#22909;&#26159;16&lt;em&gt;16&#25110;&#32773;32&lt;/em&gt;32 256&#33394;&#65292;&#20010;&#20154;&#25512;&#33616;16*16&#65292;&#22240;&#20026;&#22826;&#22823;&#20102;&#27809;&#26377;&#29992;&#12290;   &lt;/p&gt;
+&lt;p&gt;&#22270;&#26631;&#30340;&#23610;&#23544;&#26368;&#22909;&#26159;16*16&#25110;&#32773;32*32 256&#33394;&#65292;&#20010;&#20154;&#25512;&#33616;16*16&#65292;&#22240;&#20026;&#22826;&#22823;&#20102;&#27809;&#26377;&#29992;&#12290;    &lt;/p&gt;
 &lt;p&gt;&#28155;&#21152;&#22270;&#26631;&#30340;&#26041;&#24335;&#26377;&#20004;&#31181;&#65306;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -73,7 +146,7 @@ set bufhidden=hide
 &lt;p&gt;&#20854;&#20013;&#30340;&lt;code&gt;href&lt;/code&gt;&#21487;&#20197;&#25351;&#21521;&#20219;&#20309;ico&#25991;&#20214;&#65292;&#20063;&#21487;&#20197;&#20351;&#29992;&#26412;&#31449;&#30340;&#30456;&#23545;&#36335;&#24452;&#12290;&lt;br /&gt;
 &#20351;&#29992;&#36825;&#20010;&#26041;&#27861;&#21487;&#20197;&#20026;&#19981;&#21516;&#30340;&#39029;&#38754;&#25351;&#23450;&#19981;&#21516;&#30340;&#22270;&#26631;&#25991;&#20214;&#12290;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</description><guid isPermaLink="true">http://wangfu.info//article/2013-03-23-2-add-favicon-icon-to-site</guid><pubDate>Sat, 23 Mar 2013 23:40:00 GMT</pubDate></item><item><title>Markdown&#35821;&#27861;&#23398;&#20064; Part2</title><link>http://wangfu.info//article/2013-03-23-1-markdown-syntax-learn-part2</link><description>&lt;h4&gt;&#20843;&#12289;&#38142;&#25509;&lt;/h4&gt;
+&lt;/ol&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2013-03-23-2-add-favicon-icon-to-site</guid><pubDate>Sat, 23 Mar 2013 23:40:00 GMT</pubDate></item><item><title>Markdown&#35821;&#27861;&#23398;&#20064; Part2</title><link>http://blog.wangfu.info/article/2013-03-23-1-markdown-syntax-learn-part2</link><description>&lt;h4&gt;&#20843;&#12289;&#38142;&#25509;&lt;/h4&gt;
 &lt;p&gt;&#20316;&#20026;&#25991;&#31456;&#20013;&#24456;&#37325;&#35201;&#30340;&#19968;&#37096;&#20998;&#65292;&#38142;&#25509;&#26159;&#19981;&#21487;&#25110;&#32570;&#30340;&#12290;&lt;br /&gt;
 Markdown&#25903;&#25345;&#20004;&#31181;&#24418;&#24335;&#30340;&#38142;&#25509;&#35821;&#27861;&#65306;&lt;em&gt;&#34892;&#20869;&#24335;&lt;/em&gt;&#21644;&lt;em&gt;&#21442;&#32771;&#24335;&lt;/em&gt;&#12290;    &lt;/p&gt;
 &lt;p&gt;&#19981;&#31649;&#29992;&#21738;&#31181;&#26041;&#24335;&#65292;&#38142;&#25509;&#25991;&#23383;&#22343;&#29992;[&#26041;&#25324;&#21495;]&#26469;&#26631;&#35760;&lt;/p&gt;
@@ -213,7 +286,7 @@ _   &#24213;&#32447;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h5&gt;&#26412;&#25991;&#21442;&#32771;GitCafe&#19978;&#30340;&lt;a href="https://gitcafe.com/riku/Markdown-Syntax-CN/" title="Markdown&#35821;&#27861;&#35828;&#26126;"&gt;Markdown&#35821;&#27861;&#35828;&#26126;&lt;/a&gt;&#12290;&lt;/h5&gt;</description><guid isPermaLink="true">http://wangfu.info//article/2013-03-23-1-markdown-syntax-learn-part2</guid><pubDate>Sat, 23 Mar 2013 22:29:00 GMT</pubDate></item><item><title>Markdown + Pygments&#23454;&#29616;&#20195;&#30721;&#39640;&#20142;</title><link>http://wangfu.info//article/2013-03-16-markdown-code-syntax-hight</link><description>&lt;h5&gt;&#19968;&#12289;&#31034;&#20363;&lt;/h5&gt;
+&lt;h5&gt;&#26412;&#25991;&#21442;&#32771;GitCafe&#19978;&#30340;&lt;a href="https://gitcafe.com/riku/Markdown-Syntax-CN/" title="Markdown&#35821;&#27861;&#35828;&#26126;"&gt;Markdown&#35821;&#27861;&#35828;&#26126;&lt;/a&gt;&#12290;&lt;/h5&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2013-03-23-1-markdown-syntax-learn-part2</guid><pubDate>Sat, 23 Mar 2013 22:29:00 GMT</pubDate></item><item><title>Markdown + Pygments&#23454;&#29616;&#20195;&#30721;&#39640;&#20142;</title><link>http://blog.wangfu.info/article/2013-03-16-markdown-code-syntax-hight</link><description>&lt;h5&gt;&#19968;&#12289;&#31034;&#20363;&lt;/h5&gt;
 &lt;p&gt;&#22914;&#19979;Markdown&#28304;&#30721;    &lt;/p&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt;```c
 #include &amp;lt;stdio.h&amp;gt;
@@ -262,7 +335,7 @@ int main(int argc,char *argv[])
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://pythonhosted.org/Markdown/extensions/code_hilite.html" title="codehilite"&gt;codehilite&#25193;&#23637;&lt;/a&gt;&#23454;&#29616;&#20102;&#39640;&#20142;&#25805;&#20316;&#65292;&#38468;&#24102;&#21442;&#25968;&lt;code&gt;guess_lang=False&lt;/code&gt;&#26159;&#20026;&#20102;&#22312;&#19981;&#26631;&#31034;&#20195;&#30721;&#31867;&#22411;&#26102;&#19981;&#35753;pygments&#29468;&#27979;&#35821;&#35328;&#31867;&#22411;&#24182;&#39640;&#20142;&#12290;   &lt;/li&gt;
 &lt;li&gt;&lt;a href="http://pythonhosted.org/Markdown/extensions/fenced_code_blocks.html" title="fenced_code"&gt;fenced_code&#25193;&#23637;&lt;/a&gt;&#23454;&#29616;&#20102;&#24378;&#21046;&#36793;&#30028;&#25511;&#21046;&#65292;&#21482;&#26377;&#22312;&#19977;&#20010;&lt;code&gt;`&lt;/code&gt;&#21453;&#24341;&#21495;&#20043;&#38388;&#30340;&#20869;&#23481;&#25165;&#20250;&#34987;&#24403;&#20570;&#20195;&#30721;&#36827;&#34892;&#35299;&#26512;&#12290;&lt;/li&gt;
-&lt;/ul&gt;</description><guid isPermaLink="true">http://wangfu.info//article/2013-03-16-markdown-code-syntax-hight</guid><pubDate>Sat, 16 Mar 2013 13:30:00 GMT</pubDate></item><item><title>Markdown&#35821;&#27861;&#23398;&#20064; Part1</title><link>http://wangfu.info//article/2013-03-11-markdown-syntax-learn-part1</link><description>&lt;h4&gt;&#19968;&#12289;&#27573;&#33853;&#21644;&#25442;&#34892;&lt;/h4&gt;
+&lt;/ul&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2013-03-16-markdown-code-syntax-hight</guid><pubDate>Sat, 16 Mar 2013 13:30:00 GMT</pubDate></item><item><title>Markdown&#35821;&#27861;&#23398;&#20064; Part1</title><link>http://blog.wangfu.info/article/2013-03-11-markdown-syntax-learn-part1</link><description>&lt;h4&gt;&#19968;&#12289;&#27573;&#33853;&#21644;&#25442;&#34892;&lt;/h4&gt;
 &lt;p&gt;&#27573;&#33853;&#30001;&#19968;&#20010;&#25110;&#22810;&#20010;&#36830;&#32493;&#30340;&#25991;&#26412;&#32452;&#25104;&#65292;&#30001;&#27573;&#33853;&#21069;&#21518;&#30340;&#19968;&#20010;&#25110;&#22810;&#20010;&#31354;&#34892;&#20998;&#21106;&#24320;&#12290;&lt;/p&gt;
 &lt;p&gt;&#27573;&#33853;&#20869;&#25991;&#26412;&#30340;&#25442;&#34892;&#30001;&#19978;&#19968;&#34892;&#26411;&#23614;&#30340;&#20004;&#20010;&#20197;&#19978;&#31354;&#26684;&#20197;&#21450;&#22238;&#36710;&#32452;&#25104;&#12290;&lt;/p&gt;
 &lt;h4&gt;&#20108;&#12289;&#26631;&#39064;&lt;/h4&gt;
@@ -417,4 +490,4 @@ Markdown&#20013;&#24314;&#31435;&#20195;&#30721;&#22359;&#21482;&#38656;&#35201;
 - - -
 ___
 _ _ _
-&lt;/pre&gt;&lt;/div&gt;</description><guid isPermaLink="true">http://wangfu.info//article/2013-03-11-markdown-syntax-learn-part1</guid><pubDate>Mon, 11 Mar 2013 00:59:00 GMT</pubDate></item></channel></rss>
+&lt;/pre&gt;&lt;/div&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2013-03-11-markdown-syntax-learn-part1</guid><pubDate>Mon, 11 Mar 2013 00:59:00 GMT</pubDate></item></channel></rss>
