@@ -23,7 +23,7 @@ import markdown
 import time
 from flask import Markup
 
-STR_MORE_BEGIN = '[More...]('
+STR_MORE_BEGIN = '[***More...***]('
 STR_MORE_END = ')       '
 
 def sortArticleListByTime(fileList, reverse = False):
