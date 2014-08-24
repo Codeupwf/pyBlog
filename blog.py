@@ -6,6 +6,7 @@ import markdown
 from article import getArticleContent, sortArticleListByTime
 from flask import Flask, request, g, \
     render_template, flash, Markup
+from flask.ext.cache import Cache
 
 # configuration
 DEBUG = True
@@ -13,11 +14,17 @@ TITLE = 'Wang Fu'
 URL = 'http://blog.wangfu.info'
 POST_DIR = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'posts'
 RSS_PATH = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'rss.xml'
+FORMAT = '%(asctime)-15s [%(pathname)s:%(lineno)d]: %(message)s'
 
 # create app
 app = Flask(__name__)
 app.config.from_object(__name__)
 app.config.from_envvar('SETTINGS', silent=True)
+app.debug_log_format = FORMAT
+
+# create cache instance
+cache = Cache(app, config={"CACHE_TYPE": "simple"})
+
 
 def articleFileRender(filePath, showMore):
     return getArticleContent(filePath, app.config["URL"] + "/article/", showMore)
@@ -57,9 +64,10 @@ def RSSMaker():
         items=rssItems)
     rss.write_xml(open(app.config['RSS_PATH'], "w"))
 
-
 @app.route(r'/', methods=['GET'])
+@cache.cached()
 def index():
+    app.logger.debug("index begin")
     articles = []
     postDir = app.config["POST_DIR"]
     fileList = []
@@ -80,10 +88,13 @@ def index():
         pnext = True
     else:
         pnext = False
-    return render_template("index.html", title=app.config['TITLE'], url=app.config['URL'], articles=articles, prev=prev, pnext=pnext, prevnum=p - 3, nextnum=p + 3)
+    tmprender = render_template("index.html", title=app.config['TITLE'], url=app.config['URL'], articles=articles, prev=prev, pnext=pnext, prevnum=p - 3, nextnum=p + 3)
+    app.logger.debug("index end")
+    return tmprender
 
 
 @app.route(r'/article/<articleID>')
+@cache.cached()
 def article(articleID):
     postPath = app.config["POST_DIR"] + os.sep + \
         articleID.replace('.', '') + '.markdown'
@@ -98,6 +109,7 @@ def notFound(e):
 
 
 @app.route(r'/rss')
+@cache.cached()
 def RSSRender():
     f = open(app.config['RSS_PATH'], "r")
     return f.read()

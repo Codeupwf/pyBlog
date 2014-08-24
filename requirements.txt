@@ -4,3 +4,4 @@ tornado==1.2.1
 uWSGI==1.4.4
 PyRSS2Gen
 pygments
+Flask-Cache
