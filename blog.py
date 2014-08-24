@@ -64,15 +64,14 @@ def RSSMaker():
         items=rssItems)
     rss.write_xml(open(app.config['RSS_PATH'], "w"))
 
-@app.route(r'/', methods=['GET'])
 @cache.cached()
-def index():
+def getPageByIndex(Index):
     app.logger.debug("index begin")
     articles = []
     postDir = app.config["POST_DIR"]
     fileList = []
     files = os.listdir(postDir)
-    p = int(request.args.get('p', '0'))
+    p = int(Index)
     for f in files:
         fileList.append(postDir + os.sep + f)
     fileList = sortArticleListByTime(fileList, reverse = True)
@@ -91,6 +90,39 @@ def index():
     tmprender = render_template("index.html", title=app.config['TITLE'], url=app.config['URL'], articles=articles, prev=prev, pnext=pnext, prevnum=p - 3, nextnum=p + 3)
     app.logger.debug("index end")
     return tmprender
+
+@app.route(r'/', methods=['GET'])
+# @cache.cached()
+def index():
+    app.logger.debug(request.path)
+    p = int(request.args.get('p', '0'))
+    request.path = request.path + str(p)
+    app.logger.debug(request.path)
+    return getPageByIndex(p)
+    # app.logger.debug("index begin")
+    # articles = []
+    # postDir = app.config["POST_DIR"]
+    # fileList = []
+    # files = os.listdir(postDir)
+    # p = int(request.args.get('p', '0'))
+    # for f in files:
+    #     fileList.append(postDir + os.sep + f)
+    # fileList = sortArticleListByTime(fileList, reverse = True)
+    # for singleFile in fileList[p:p + 3]:
+    #     article = articleFileRender(singleFile, False)
+    #     if article:
+    #         articles.append(article)
+    # if p > 2:
+    #     prev = True
+    # else:
+    #     prev = False
+    # if p + 4 <= len(fileList):
+    #     pnext = True
+    # else:
+    #     pnext = False
+    # tmprender = render_template("index.html", title=app.config['TITLE'], url=app.config['URL'], articles=articles, prev=prev, pnext=pnext, prevnum=p - 3, nextnum=p + 3)
+    # app.logger.debug("index end")
+    # return tmprender
 
 
 @app.route(r'/article/<articleID>')
