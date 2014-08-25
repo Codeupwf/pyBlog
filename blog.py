@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import codecs
 import datetime
@@ -66,6 +67,9 @@ def RSSMaker():
 
 @cache.cached()
 def getPageByIndex(Index):
+    '''根据文章索引号获取显示页，每页显示3篇文章，所以0、1、2其实返回数据是一样的。
+    使用@cache.cached()装饰器装饰，根据索引进行缓存，提高显示效率。
+    flask-cache扩展依据【request.path】作为缓存Key，所以调用本函数前要对request.path进行key值处理，必须包含Index信息'''
     app.logger.debug("index begin")
     articles = []
     postDir = app.config["POST_DIR"]
@@ -94,40 +98,18 @@ def getPageByIndex(Index):
 @app.route(r'/', methods=['GET'])
 # @cache.cached()
 def index():
+    '''显示主页'''
     app.logger.debug(request.path)
     p = int(request.args.get('p', '0'))
     request.path = request.path + str(p)
     app.logger.debug(request.path)
     return getPageByIndex(p)
-    # app.logger.debug("index begin")
-    # articles = []
-    # postDir = app.config["POST_DIR"]
-    # fileList = []
-    # files = os.listdir(postDir)
-    # p = int(request.args.get('p', '0'))
-    # for f in files:
-    #     fileList.append(postDir + os.sep + f)
-    # fileList = sortArticleListByTime(fileList, reverse = True)
-    # for singleFile in fileList[p:p + 3]:
-    #     article = articleFileRender(singleFile, False)
-    #     if article:
-    #         articles.append(article)
-    # if p > 2:
-    #     prev = True
-    # else:
-    #     prev = False
-    # if p + 4 <= len(fileList):
-    #     pnext = True
-    # else:
-    #     pnext = False
-    # tmprender = render_template("index.html", title=app.config['TITLE'], url=app.config['URL'], articles=articles, prev=prev, pnext=pnext, prevnum=p - 3, nextnum=p + 3)
-    # app.logger.debug("index end")
-    # return tmprender
 
 
 @app.route(r'/article/<articleID>')
 @cache.cached()
 def article(articleID):
+    '''显示单页文章'''
     postPath = app.config["POST_DIR"] + os.sep + \
         articleID.replace('.', '') + '.markdown'
     article = articleFileRender(postPath, True)

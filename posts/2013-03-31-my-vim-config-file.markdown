@@ -61,7 +61,7 @@ set bufhidden=hide
 ### 存放位置
 
 将以上内容保存为`.vimrc`文件，并保存在`~/`目录下，即用户根目录下。		
-我的存放位置如下：
+我的存放位置如下：   
 ![my config file][p1]
 
-[p1]: https://lh6.googleusercontent.com/-ld9j4KknEHI/UVhY4uIZKnI/AAAAAAAAAmk/WtqKYe3-Fiw/s684/vimrc.png "my vim config file .vimrc"
+[p1]: http://ww4.sinaimg.cn/mw690/6b995d17gw1ejp8u22iqhj20j00dcdhg.jpg "my vim config file .vimrc"
