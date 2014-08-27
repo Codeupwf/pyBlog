@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<rss version="2.0"><channel><title>Wang Fu</title><link>http://blog.wangfu.info</link><description></description><lastBuildDate>Wed, 27 Aug 2014 15:22:31 GMT</lastBuildDate><generator>PyRSS2Gen-1.0.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Unix&#31995;&#32479;&#19979;CTRL-Z&#21644;CTRL-C&#30340;&#21306;&#21035;</title><link>http://blog.wangfu.info/article/2014-08-23-Unix-ctrl-c-ctrl-z</link><description>&lt;h3&gt;Unix&#31995;&#32479;&#19979;CTRL-Z&#21644;CTRL-C&#30340;&#21306;&#21035;&lt;/h3&gt;
+<rss version="2.0"><channel><title>Wang Fu</title><link>http://blog.wangfu.info</link><description></description><lastBuildDate>Wed, 27 Aug 2014 16:07:47 GMT</lastBuildDate><generator>PyRSS2Gen-1.0.0</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Unix&#31995;&#32479;&#19979;CTRL-Z&#21644;CTRL-C&#30340;&#21306;&#21035;</title><link>http://blog.wangfu.info/article/2014-08-23-Unix-ctrl-c-ctrl-z</link><description>&lt;h3&gt;Unix&#31995;&#32479;&#19979;CTRL-Z&#21644;CTRL-C&#30340;&#21306;&#21035;&lt;/h3&gt;
 &lt;p&gt;&#24179;&#26102;&#22312;&#21629;&#20196;&#34892;&#19979;&#25191;&#34892;&#21629;&#20196;&#30340;&#26102;&#20505;&#65292;&#37117;&#26159;&#20064;&#24815;&#29992;CTRL-Z&#25110;&#32773;CTRL-C&#26469;&#36864;&#20986;&#24403;&#21069;&#25191;&#34892;&#30340;&#21629;&#20196;&#65292;&#27604;&#22914;&#27491;&#22312;Ping XXX&#30340;&#26102;&#20505;&#24819;&#35201;&#36864;&#20986;&#31561;&#12290;
 &#21482;&#30693;&#36947;&#36890;&#36807;CTRL-Z&#21644;CTRL-C&#37117;&#33021;&#23454;&#29616;&#36864;&#20986;&#24403;&#21069;&#25191;&#34892;&#21629;&#20196;&#30340;&#21151;&#33021;&#65292;&#20294;&#26159;&#20004;&#32773;&#30340;&#21306;&#21035;&#21364;&#24182;&#19981;&#28165;&#26970;&#65292;&#20170;&#22825;&#26597;&#20102;&#19979;&#36164;&#26009;&#25165;&#25630;&#28165;&#26970;&#12290;&lt;/p&gt;
 &lt;h4&gt;&#39318;&#20808;&#26159;&#30456;&#21516;&#28857;&#65306;&lt;/h4&gt;
@@ -20,25 +20,25 @@
 &lt;p&gt;&#36825;&#26377;&#28857;&#23439;&#23450;&#20041;&#30340;&#24863;&#35273;~      &lt;/p&gt;
 &lt;p&gt;&#25152;&#20197;&#65292;&#19979;&#38754;&#36825;&#27573;&#20195;&#30721;&#26159;&#30495;&#30340;&#21487;&#20197;&#29992;&#30340;&#65281;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;abc.h&lt;/code&gt;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #666666"&gt;1&lt;/span&gt;,&lt;span style="color: #666666"&gt;2&lt;/span&gt;,&lt;span style="color: #666666"&gt;3&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&lt;code&gt;main.cpp&lt;/code&gt;  &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#include &amp;lt;iostream&amp;gt;&lt;/span&gt;
-&lt;span class="cp"&gt;#include &amp;lt;string&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #008800"&gt;#include &amp;lt;iostream&amp;gt;&lt;/span&gt;
+&lt;span style="color: #008800"&gt;#include &amp;lt;string&amp;gt;&lt;/span&gt;
 
-&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="n"&gt;include&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;abc.h&amp;quot;&lt;/span&gt;
-    &lt;span class="p"&gt;};&lt;/span&gt;
-        &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; &lt;span style="color: #00A000"&gt;main&lt;/span&gt;()
+{
+    &lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; a[] &lt;span style="color: #666666"&gt;=&lt;/span&gt; {
+        &lt;span style="border: 1px solid #FF0000"&gt;#&lt;/span&gt;include &lt;span style="color: #BB4444"&gt;&amp;quot;abc.h&amp;quot;&lt;/span&gt;
+    };
+        &lt;span style="color: #AA22FF; font-weight: bold"&gt;for&lt;/span&gt; (&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; i &lt;span style="color: #666666"&gt;=&lt;/span&gt; &lt;span style="color: #666666"&gt;0&lt;/span&gt;;i&lt;span style="color: #666666"&gt;&amp;lt;&lt;/span&gt; &lt;span style="color: #666666"&gt;3&lt;/span&gt;;i&lt;span style="color: #666666"&gt;++&lt;/span&gt;)
+    {
+        std&lt;span style="color: #666666"&gt;::&lt;/span&gt;cout&lt;span style="color: #666666"&gt;&amp;lt;&amp;lt;&lt;/span&gt;a[i]&lt;span style="color: #666666"&gt;&amp;lt;&amp;lt;&lt;/span&gt;std&lt;span style="color: #666666"&gt;::&lt;/span&gt;endl;
+    }
+        &lt;span style="color: #AA22FF; font-weight: bold"&gt;return&lt;/span&gt; &lt;span style="color: #666666"&gt;0&lt;/span&gt;;
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -46,23 +46,23 @@
 &lt;h4&gt;&#23454;&#20363;&lt;/h4&gt;
 &lt;p&gt;&#20170;&#22825;&#22240;&#20026;&#26576;&#20123;&#21407;&#22240;&#65292;&#38656;&#35201;&#36890;&#36807;&#21629;&#20196;&#34892;&#26469;&#29992;sublime&#25171;&#24320;&#26576;&#20010;&#38544;&#34255;&#25991;&#20214;&#65292;&#20294;&#26159;sublime&#30340;&#21629;&#20196;&#24182;&#19981;&#22312;usr/bin&#30446;&#24405;&#19979;&#65292;&#25152;&#20197;&#26080;&#27861;&#20351;&#29992;&#31616;&#27905;&#30340;&#21629;&#20196;&#34892;&#26469;&#25171;&#24320;&#26576;&#20010;&#25991;&#20214;&#12290;
 &#21518;&#26469;&#26597;&#20102;&#19968;&#20123;&#36164;&#26009;&#65292;&#21457;&#29616;sublime text 2&#30340;&#21629;&#20196;&#34892;&#24037;&#20855;&#22312;&#36825;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#22914;&#26524;&#20320;&#19981;&#23244;&#40635;&#28902;&#30340;&#35805;&#65292;&#21487;&#20197;&#27599;&#27425;&#37117;&#29992;&#36825;&#20010;&#21629;&#20196;&#26469;&#25171;&#24320;&#25991;&#20214;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl XXX
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl XXX
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#20854;&#23454;&#25105;&#20204;&#21487;&#20197;&#36890;&#36807;Unix&#33258;&#24102;&#30340;&#25991;&#20214;&#36830;&#25509;&#21151;&#33021;&#65292;&#22312;&lt;code&gt;usr/bin&lt;/code&gt;&#30446;&#24405;&#19979;&#21019;&#24314;&#19968;&#20010;&lt;code&gt;subl&lt;/code&gt;&#30340;&#36719;&#36830;&#25509;&#25991;&#20214;&#65292;&#36825;&#26679;&#25105;&#20204;&#23601;&#21487;&#20197;&#30452;&#25509;&#36890;&#36807;&#21629;&#20196;&#34892;&#36755;&#20837;&lt;code&gt;subl XXX&lt;/code&gt;&#26469;&#23454;&#29616;&#20351;&#29992;Sublime&#25171;&#24320;&#25351;&#23450;&#25991;&#20214;&#30340;&#30446;&#30340;&#12290;&lt;/p&gt;
 &lt;p&gt;&#20808;&#25226;&#21019;&#24314;&#36719;&#36830;&#25509;&#30340;&#21629;&#20196;&#20889;&#22312;&#36825;&#37324;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/bin/subl
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/bin/subl
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#36825;&#26679;&#65292;&#25105;&#20204;&#23601;&#22312;&lt;code&gt;/usr/bin&lt;/code&gt;&#30446;&#24405;&#19979;&#21019;&#24314;&#20102;&#19968;&#20010;&lt;code&gt;subl&lt;/code&gt;&#25991;&#20214;&#65292;&#36825;&#20010;&#25991;&#20214;&#26159;&#19968;&#20010;&#25351;&#21521;&lt;code&gt;/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl&lt;/code&gt;&#30340;&#36719;&#36830;&#25509;&#12290;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;Codeup-Mac:bin Codeup$ ls -l grep subl
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;Codeup-Mac:bin Codeup$ ls -l grep subl
 -rwxr-xr-x  3 root  wheel  30096 10 24 20:09 grep
 lrwxr-xr-x  1 root  wheel     64 12  1 00:13 subl -&amp;gt; /Applications/Sublime Text
 &lt;/pre&gt;&lt;/div&gt;
@@ -70,7 +70,7 @@ lrwxr-xr-x  1 root  wheel     64 12  1 00:13 subl -&amp;gt; /Applications/Sublim
 
 &lt;h4&gt;&#25991;&#20214;&#36830;&#25509;&lt;/h4&gt;
 &lt;p&gt;&#25105;&#20204;&#20877;&#22238;&#36807;&#22836;&#26469;&#35299;&#37322;&#19968;&#19979;&#21019;&#24314;&#25991;&#20214;&#36830;&#25509;&#30340;&#21629;&#20196;&lt;code&gt;ln&lt;/code&gt;&#12290;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;ln [-Ffhinsv] source_file target_file
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;ln [-Ffhinsv] source_file target_file
 -f &#24314;&#31435;&#26102;&#65292;&#23558;&#21516;&#26723;&#26696;&#21517;&#21024;&#38500;&#12290;
 -i &#21024;&#38500;&#21069;&#36827;&#34892;&#35810;&#38382;&#12290;
 -s &#24314;&#31435;&#20174; source_file&#21040;target_file&#30340;&#36719;&#36830;&#25509;&#12290;
@@ -85,7 +85,7 @@ lrwxr-xr-x  1 root  wheel     64 12  1 00:13 subl -&amp;gt; /Applications/Sublim
 &lt;/ol&gt;
 &lt;p&gt;&#20851;&#20110;&#31526;&#21495;&#36830;&#25509;&#30340;&#26356;&#35814;&#32454;&#20869;&#23481;&#65292;&#21442;&#35265;&lt;a href="http://zh.wikipedia.org/wiki/%E7%AC%A6%E5%8F%B7%E9%93%BE%E6%8E%A5" title="&#31526;&#21495;&#38142;&#25509;"&gt;Wiki&lt;/a&gt;   &lt;br /&gt;
 ps: Mac&#31995;&#32479;&#19979;&#30340;&#26367;&#36523;&#65292;&#20854;&#23454;&#23601;&#26159;&#19968;&#31181;&#30828;&#36830;&#25509;&#12290;&lt;/p&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2013-12-01-Unix-Symbolic-Link</guid><pubDate>Sun, 01 Dec 2013 00:39:00 GMT</pubDate></item><item><title>Vim&#20010;&#20154;&#29992;&#37197;&#32622;</title><link>http://blog.wangfu.info/article/2013-03-31-my-vim-config-file</link><description>&lt;h3&gt;Vim &#20010;&#20154;&#29992;&#37197;&#32622;&lt;/h3&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;quot;&#35821;&#27861;&#39640;&#20142;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;quot;&#35821;&#27861;&#39640;&#20142;
 if has(&amp;quot;syntax&amp;quot;)
   syntax on
 endif
@@ -149,7 +149,7 @@ set bufhidden=hide
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&#22312;&#39029;&#38754;&#30340;&lt;code&gt;&amp;lt;HEAD&amp;gt;&lt;/code&gt;&#26631;&#31614;&#20043;&#38388;&#22686;&#21152;link&#25351;&#21521;&#65292;&#20030;&#20363;&#22914;&#19979;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;head&amp;gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;lt;head&amp;gt;
     &amp;lt;link rel=&amp;quot;Shortcut&amp;quot; href=&amp;quot;http://example.com/favicon.ico&amp;quot;&amp;gt;
 &amp;lt;/head&amp;gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -166,13 +166,13 @@ Markdown&#25903;&#25345;&#20004;&#31181;&#24418;&#24335;&#30340;&#38142;&#25509;
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;&#34892;&#20869;&#24335;&lt;/em&gt;&#65306;
     &#35201;&#24314;&#31435;&#19968;&#20010;&#34892;&#20869;&#24335;&#30340;&#38142;&#25509;&#65292;&#21482;&#35201;&#22312;&#26041;&#22359;&#25324;&#21495;&#21518;&#38754;&#32039;&#25509;&#30528;&#22278;&#25324;&#21495;&#24182;&#25554;&#20837;&#32593;&#22336;&#38142;&#25509;&#21363;&#21487;&#65292;&#22914;&#26524;&#20320;&#36824;&#24819;&#35201;&#21152;&#19978;&#38142;&#25509;&#30340; title &#25991;&#23383;&#65292;&#21482;&#35201;&#22312;&#32593;&#22336;&#21518;&#38754;&#65292;&#29992;&#21452;&#24341;&#21495;&#25226; title &#25991;&#23383;&#21253;&#36215;&#26469;&#21363;&#21487;&#12290;  &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;This is [an example](http://example.com/ &amp;quot;Title&amp;quot;) inline link.  
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;This is [an example](http://example.com/ &amp;quot;Title&amp;quot;) inline link.  
 [This link](http://example.net/) has no title attribute.
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#20250;&#20135;&#29983;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;p&amp;gt;This is &amp;lt;a href=&amp;quot;http://example.com/&amp;quot; title=&amp;quot;Title&amp;quot;&amp;gt;an example&amp;lt;/a&amp;gt; inline link.&amp;lt;/p&amp;gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;lt;p&amp;gt;This is &amp;lt;a href=&amp;quot;http://example.com/&amp;quot; title=&amp;quot;Title&amp;quot;&amp;gt;an example&amp;lt;/a&amp;gt; inline link.&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://example.net/&amp;quot;&amp;gt;This link&amp;lt;/a&amp;gt; has no title attribute.&amp;lt;/p&amp;gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -182,12 +182,12 @@ Markdown&#25903;&#25345;&#20004;&#31181;&#24418;&#24335;&#30340;&#38142;&#25509;
 &lt;li&gt;
 &lt;p&gt;&lt;em&gt;&#21442;&#32771;&#24335;&lt;/em&gt;&#65306;
     &#21442;&#32771;&#24335;&#30340;&#38142;&#25509;&#26159;&#22312;&#38142;&#25509;&#25991;&#23383;&#30340;&#25324;&#21495;&#21518;&#38754;&#20877;&#25509;&#19978;&#21478;&#19968;&#20010;&#26041;&#25324;&#21495;&#65292;&#32780;&#22312;&#31532;&#20108;&#20010;&#26041;&#25324;&#21495;&#37324;&#38754;&#35201;&#22635;&#20837;&#29992;&#20197;&#36776;&#35782;&#38142;&#25509;&#30340;&#26631;&#35760;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;This is [an example][id] reference-style link.
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;This is [an example][id] reference-style link.
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#25509;&#30528;&#65292;&#22312;&#25991;&#31456;&#30340;&#20219;&#24847;&#22788;&#65292;&#20320;&#21487;&#20197;&#21543;&#36825;&#20010;&#26631;&#35760;&#30340;&#38142;&#25509;&#20869;&#23481;&#23450;&#20041;&#20986;&#26469;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;[id]: http://example.com/  &amp;quot;Optional Title Here&amp;quot;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;[id]: http://example.com/  &amp;quot;Optional Title Here&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -198,12 +198,12 @@ Markdown&#25903;&#25345;&#20004;&#31181;&#24418;&#24335;&#30340;&#38142;&#25509;
 &lt;/em&gt; &#25509;&#30528;&#38142;&#25509;&#30340;&#32593;&#22336;
 * &#36873;&#25321;&#24615;&#22320;&#25509;&#30528; title &#20869;&#23481;&#65292;&#21487;&#20197;&#29992;&#21333;&#24341;&#21495;&#12289;&#21452;&#24341;&#21495;&#25110;&#26159;&#25324;&#24359;&#21253;&#30528;&lt;/p&gt;
 &lt;p&gt;&#38142;&#25509;&#32593;&#22336;&#20063;&#21487;&#20197;&#29992;&#23574;&#25324;&#21495;&#21253;&#36215;&#26469;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;[id]: &amp;lt;http://example.com/&amp;gt;  &amp;quot;Optional Title Here&amp;quot;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;[id]: &amp;lt;http://example.com/&amp;gt;  &amp;quot;Optional Title Here&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#25110;&#32773;&#20320;&#20063;&#21487;&#20197;&#25226;title&#23646;&#24615;&#25918;&#21040;&#19979;&#19968;&#34892;&#65292;&#21152;&#19968;&#20123;&#32553;&#36827;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;[id]: http://example.com/longish/path/to/resource/here
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;[id]: http://example.com/longish/path/to/resource/here
     &amp;quot;Optional Title Here&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -211,12 +211,12 @@ Markdown&#25903;&#25345;&#20004;&#31181;&#24418;&#24335;&#30340;&#38142;&#25509;
 &lt;p&gt;&#38142;&#25509;&#35782;&#21035;&#26631;&#35760;&#21487;&#20197;&#26377;&#23383;&#27597;&#12289;&#25968;&#23383;&#12289;&#31354;&#30333;&#21644;&#26631;&#28857;&#31526;&#21495;&#65292;&#20294;&#26159;&#24182;&#19981;&#21306;&#20998;&#22823;&#23567;&#20889;&#12290; &lt;br /&gt;
 &lt;em&gt;&#38544;&#24335;&#38142;&#25509;&#26631;&#35760;&lt;/em&gt;&#21151;&#33021;&#21487;&#20197;&#30465;&#30053;&#38142;&#25509;&#35782;&#21035;&#26631;&#35760;&#65292;&#36825;&#31181;&#24773;&#20917;&#19979;&#38142;&#25509;&#35782;&#21035;&#26631;&#35760;&#20250;&#35270;&#20026;&#23601;&#26159;&#38142;&#25509;&#20869;&#23481;&#65292;&#35201;&#29992;&#38544;&#24335;&#38142;&#25509;&#26631;&#35760;&#21482;&#35201;&#22312;&#38142;&#25509;&#25991;&#23383;&#21518;&#38754;&#21152;&#19978;&#19968;&#20010;&#31354;&#30340;&#26041;&#25324;&#21495;&#12290; &lt;br /&gt;
 &#27604;&#22914;&#65292;&#35201;&#35753;&#8220;Google&#8221;&#38142;&#25509;&#21040; google.com &#20320;&#21487;&#20197;&#31616;&#21270;&#20070;&#20889;&#22914;&#19979;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;[Google][]
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;[Google][]
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#28982;&#21518;&#23450;&#20041;&#38142;&#25509;&#20869;&#23481;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;[Google]: htttp://google.com
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;[Google]: htttp://google.com
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -228,7 +228,7 @@ Markdown&#25903;&#25345;&#20004;&#31181;&#24418;&#24335;&#30340;&#38142;&#25509;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&#34892;&#20869;&#24335;&#35821;&#27861;&#31867;&#20284;&#20110;&#22914;&#19979;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;![Alt text](/path/to/img.jpg)
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg &amp;quot;Optional title&amp;quot;)
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -242,12 +242,12 @@ Markdown&#25903;&#25345;&#20004;&#31181;&#24418;&#24335;&#30340;&#38142;&#25509;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&#21442;&#32771;&#24335;&#30340;&#22270;&#29255;&#35821;&#27861;&#35268;&#21017;&#31867;&#20284;&#20110;&#22914;&#19979;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;![Alt Text][id]
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;![Alt Text][id]
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#20854;&#20013;[id]&#26159;&#22270;&#29255;&#21442;&#32771;&#30340;&#21517;&#31216;&#65292;&#22270;&#29255;&#21442;&#32771;&#30340;&#23450;&#20041;&#26041;&#24335;&#19982;&#38142;&#25509;&#21442;&#32771;&#26631;&#35760;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;[id]: url/to/image &amp;quot;Optional title attribute&amp;quot;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;[id]: url/to/image &amp;quot;Optional title attribute&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -256,22 +256,22 @@ Markdown&#25903;&#25345;&#20004;&#31181;&#24418;&#24335;&#30340;&#38142;&#25509;
 &lt;/ol&gt;
 &lt;h4&gt;&#21313;&#12289;&#33258;&#21160;&#38142;&#25509;&lt;/h4&gt;
 &lt;p&gt;Markdown&#25903;&#25345;&#20197;&#27604;&#36739;&#31616;&#30701;&#30340;&#33258;&#21160;&#38142;&#25509;&#24418;&#24335;&#26469;&#22788;&#29702;&#32593;&#22336;&#21644;&#30005;&#23376;&#37038;&#20214;&#20449;&#31665;&#65292;&#21482;&#35201;&#26159;&#29992;&#23574;&#25324;&#21495;&#21253;&#36215;&#26469;&#65292;Markdown&#23601;&#20250;&#33258;&#21160;&#23558;&#20854;&#36716;&#25442;&#20026;&#38142;&#25509;&#65292;&#20363;&#22914;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;http://example.com/&amp;gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;lt;http://example.com/&amp;gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Markdown&#20250;&#36716;&#20026;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;a href=&amp;quot;http://example.com/&amp;quot;&amp;gt;http://example.com/&amp;lt;/a&amp;gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;lt;a href=&amp;quot;http://example.com/&amp;quot;&amp;gt;http://example.com/&amp;lt;/a&amp;gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#37038;&#20214;&#22320;&#22336;&#30340;&#33258;&#21160;&#38142;&#25509;&#36716;&#25442;&#31867;&#20284;&#65292;&#19981;&#36807;&#20250;&#20808;&#20570;&#19968;&#20010;&#32534;&#30721;&#36716;&#25442;&#65292;&#25226;&#25991;&#23383;&#23383;&#31526;&#36716;&#25104; 16 &#36827;&#20301;&#30721;&#30340; HTML &#23454;&#20307;&#65292;&#36825;&#26679;&#30340;&#26684;&#24335;&#21487;&#20197;&#31946;&#24324;&#19968;&#20123;&#19981;&#22909;&#30340;&#37038;&#22336;&#25910;&#38598;&#26426;&#22120;&#20154;&#65292;&#20363;&#22914;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;address@example.com&amp;gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;lt;address@example.com&amp;gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Markdown&#20250;&#36716;&#20026;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;a href=&amp;quot;&amp;amp;#x6D;&amp;amp;#x61;i&amp;amp;#x6C;&amp;amp;#x74;&amp;amp;#x6F;:&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;lt;a href=&amp;quot;&amp;amp;#x6D;&amp;amp;#x61;i&amp;amp;#x6C;&amp;amp;#x74;&amp;amp;#x6F;:&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;
 &amp;amp;#115;&amp;amp;#115;&amp;amp;#64;&amp;amp;#101;&amp;amp;#120;&amp;amp;#x61;&amp;amp;#109;&amp;amp;#x70;&amp;amp;#x6C;e&amp;amp;#x2E;&amp;amp;#99;&amp;amp;#111;
 &amp;amp;#109;&amp;quot;&amp;gt;&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;&amp;amp;#115;&amp;amp;#115;&amp;amp;#64;&amp;amp;#101;&amp;amp;#120;&amp;amp;#x61;
 &amp;amp;#109;&amp;amp;#x70;&amp;amp;#x6C;e&amp;amp;#x2E;&amp;amp;#99;&amp;amp;#111;&amp;amp;#109;&amp;lt;/a&amp;gt;
@@ -282,7 +282,7 @@ Markdown&#25903;&#25345;&#20004;&#31181;&#24418;&#24335;&#30340;&#38142;&#25509;
 &lt;h4&gt;&#21313;&#19968;&#12289;&#21453;&#26012;&#26464;&lt;/h4&gt;
 &lt;p&gt;Markdown&#20013;&#30340;&#21453;&#26012;&#26464;&#23454;&#38469;&#23601;&#26159;&#36716;&#20041;&#23383;&#31526;&#65292;&#21487;&#20197;&#20351;&#26377;&#35821;&#27861;&#24847;&#20041;&#30340;&#23383;&#31526;&#19981;&#36215;&#20316;&#29992;&#12290;&lt;br /&gt;
 Markdown&#25903;&#25345;&#20197;&#19979;&#29305;&#27530;&#23383;&#31526;&#30340;&#36716;&#20041;&#25805;&#20316;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;\   &#21453;&#26012;&#32447;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;\   &#21453;&#26012;&#32447;
 `   &#21453;&#24341;&#21495;
 *   &#26143;&#21495;
 _   &#24213;&#32447;
@@ -300,7 +300,7 @@ _   &#24213;&#32447;
 
 &lt;h5&gt;&#26412;&#25991;&#21442;&#32771;GitCafe&#19978;&#30340;&lt;a href="https://gitcafe.com/riku/Markdown-Syntax-CN/" title="Markdown&#35821;&#27861;&#35828;&#26126;"&gt;Markdown&#35821;&#27861;&#35828;&#26126;&lt;/a&gt;&#12290;&lt;/h5&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2013-03-23-1-markdown-syntax-learn-part2</guid><pubDate>Sat, 23 Mar 2013 22:29:00 GMT</pubDate></item><item><title>Markdown + Pygments&#23454;&#29616;&#20195;&#30721;&#39640;&#20142;</title><link>http://blog.wangfu.info/article/2013-03-16-markdown-code-syntax-hight</link><description>&lt;h5&gt;&#19968;&#12289;&#31034;&#20363;&lt;/h5&gt;
 &lt;p&gt;&#22914;&#19979;Markdown&#28304;&#30721;&#65288;&#27880;&#24847;&#19981;&#35201;&#20877;&#29992;&#32553;&#36827;&#36827;&#34892;&#20195;&#30721;&#22359;&#26631;&#35760;&#20102;&#65289;  &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;```c
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;```c
 #include &amp;lt;stdio.h&amp;gt;
 int main(int argc,char *argv[])
 {
@@ -318,18 +318,18 @@ int main(int argc,char *argv[])
 
 
 &lt;p&gt;&#20250;&#34987;&#39640;&#20142;&#26174;&#31034;&#20026;&#22914;&#19979;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
-&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;argc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;[])&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;scanf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;%d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;HH&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #008800"&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; &lt;span style="color: #00A000"&gt;main&lt;/span&gt;(&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; argc,&lt;span style="color: #00BB00; font-weight: bold"&gt;char&lt;/span&gt; &lt;span style="color: #666666"&gt;*&lt;/span&gt;argv[])
+{
+    &lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; n;
+    scanf(&lt;span style="color: #BB4444"&gt;&amp;quot;%d&amp;quot;&lt;/span&gt;,&lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt;n);
+    &lt;span style="color: #AA22FF; font-weight: bold"&gt;if&lt;/span&gt; ( n&lt;span style="color: #666666"&gt;&amp;gt;4&lt;/span&gt; ) {
+        printf(&lt;span style="color: #BB4444"&gt;&amp;quot;HH&amp;quot;&lt;/span&gt;);
+    } &lt;span style="color: #AA22FF; font-weight: bold"&gt;else&lt;/span&gt; {
+        printf(&lt;span style="color: #BB4444"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;);
+    }
+    &lt;span style="color: #AA22FF; font-weight: bold"&gt;return&lt;/span&gt; &lt;span style="color: #666666"&gt;0&lt;/span&gt;;
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -338,9 +338,9 @@ int main(int argc,char *argv[])
 &#29616;&#22312;&#25442;&#25104;python&#33258;&#24314;&#21338;&#23458;&#20102;&#65292;&#21407;&#26469;&#30340;&#25554;&#20214;&#23601;&#19981;&#33021;&#29992;&#20102;&#12290;&#30740;&#31350;&#20102;&#20004;&#22825;&#21518;&#32456;&#20110;&#25630;&#28165;&#26970;&#20102;&#24590;&#20040;&#29992;markdown&#21253;&#33258;&#24102;&#21151;&#33021;&#36827;&#34892;&#20195;&#30721;&#39640;&#20142;&#20102;&#12290;&lt;/p&gt;
 &lt;p&gt;&#29992;&#21040;&#30340;&#26159;Markdown&#27169;&#22359;&#30340;&#20004;&#20010;&#20010;&#25193;&#23637;&lt;code&gt;codehilite&lt;/code&gt;&#21644;&lt;code&gt;fenced_code&lt;/code&gt;&#65292;&#40664;&#35748;&#21253;&#21547;&#22312;&#20102;Markdown&#27169;&#22359;&#20013;&#65292;&lt;code&gt;codehilite&lt;/code&gt;&#20381;&#36182;&lt;code&gt;pygments&lt;/code&gt;&#27169;&#22359;&#23454;&#29616;&#30340;&#65292;&#38656;&#35201;&#20808;&#23433;&#35013;&lt;a href="http://pygments.org/" title="Pygments"&gt;&lt;code&gt;pygments&lt;/code&gt;&lt;/a&gt;&#12290;&lt;/p&gt;
 &lt;p&gt;&#28304;&#30721;&#22914;&#19979;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;markdown&lt;/span&gt;
-&lt;span class="o"&gt;......&lt;/span&gt;
-&lt;span class="n"&gt;ret&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;content&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Markup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;markdown&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;markdown&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;extensions&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;codehilite(guess_lang=False)&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;fenced_code&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]))&lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;import&lt;/span&gt; &lt;span style="color: #0000FF; font-weight: bold"&gt;markdown&lt;/span&gt;
+&lt;span style="color: #666666"&gt;......&lt;/span&gt;
+ret[&lt;span style="color: #BB4444"&gt;&amp;#39;content&amp;#39;&lt;/span&gt;] &lt;span style="color: #666666"&gt;=&lt;/span&gt; Markup(markdown&lt;span style="color: #666666"&gt;.&lt;/span&gt;markdown(content,extensions&lt;span style="color: #666666"&gt;=&lt;/span&gt;[&lt;span style="color: #BB4444"&gt;&amp;#39;codehilite(guess_lang=False)&amp;#39;&lt;/span&gt;,&lt;span style="color: #BB4444"&gt;&amp;#39;fenced_code&amp;#39;&lt;/span&gt;]))
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -359,7 +359,7 @@ ps:&lt;code&gt;#&lt;/code&gt;&#19982;&#26631;&#39064;&#20043;&#38388;&#38656;&#3
 &lt;h4&gt;&#19977;&#12289;&#24341;&#29992;&lt;/h4&gt;
 &lt;p&gt;&#21306;&#22359;&#24341;&#29992;&#20351;&#29992;&#34892;&#39318;&#30340; &amp;gt;&#35282;&#25324;&#21495;&#34920;&#31034;&#65292;&#21487;&#20197;&#20877;&#24341;&#29992;&#22359;&#20013;&#27599;&#34892;&#37117;&#21152;&#35282;&#25324;&#21495;&#25110;&#32773;&#21482;&#22312;&#25972;&#20010;&#27573;&#33853;&#30340;&#31532;&#19968;&#34892;&#26368;&#21069;&#21152;&#19978;&#35282;&#25324;&#21495;
 e.g.&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;A First Level Header
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;A First Level Header
 ====================
 A Second Level Header
 ---------------------
@@ -381,7 +381,7 @@ dog&amp;#39;s back.
 
 
 &lt;p&gt;&#36755;&#20986; HTML &#20026;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;h1&amp;gt;A First Level Header&amp;lt;/h1&amp;gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;lt;h1&amp;gt;A First Level Header&amp;lt;/h1&amp;gt;
 &amp;lt;h2&amp;gt;A Second Level Header&amp;lt;/h2&amp;gt;
 &amp;lt;p&amp;gt;Now is the time for all good men to come to
 the aid of their country. This is just a
@@ -421,28 +421,28 @@ dog&amp;#39;s back.&amp;lt;/p&amp;gt;
 &lt;p&gt;&#20294;&#26159;&#35201;&#27880;&#24847;&#65292;&#22914;&#26524;&lt;code&gt;*&lt;/code&gt;&#25110;&#32773;&lt;code&gt;_&lt;/code&gt;&#31526;&#21495;&#30340;&#20004;&#36793;&#37117;&#26159;&#31354;&#26684;&#30340;&#35805;&#65292;&#20182;&#20204;&#21482;&#26159;&#21333;&#32431;&#30340;&#31526;&#21495;&#65292;&#19981;&#20250;&#24378;&#35843;&#21608;&#22260;&#30340;&#23383;&#31526;&#12290;&lt;/p&gt;
 &lt;h4&gt;&#20116;&#12289;&#21015;&#34920;&lt;/h4&gt;
 &lt;p&gt;1&#65289;&#26080;&#24207;&#21015;&#34920;&#20351;&#29992;&#26143;&#21495;&#12289;&#21152;&#21495;&#12289;&#20943;&#21495;&#22312;&#34892;&#39318;&#26631;&#35760;&#24182;&#19982;&#20869;&#23481;&#20013;&#38388;&#26377;&#19968;&#20010;&#31354;&#26684;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;* Candy
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;* Candy
 * Gum
 * Booze
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#21644;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;+ Candy
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;+ Candy
 + Gum
 + Booze
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#20197;&#21450;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;- Candy
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;- Candy
 - Gum
 - Booze
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#37117;&#20250;&#34987;&#32763;&#35793;&#20026;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;ul&amp;gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;lt;ul&amp;gt;
 &amp;lt;li&amp;gt;Candy&amp;lt;/li&amp;gt;
 &amp;lt;li&amp;gt;Gum&amp;lt;/li&amp;gt;
 &amp;lt;li&amp;gt;Booze&amp;lt;/li&amp;gt;
@@ -451,14 +451,14 @@ dog&amp;#39;s back.&amp;lt;/p&amp;gt;
 
 
 &lt;p&gt;2&#65289;&#26377;&#24207;&#21015;&#34920;&#20351;&#29992;&#25968;&#23383;&#21152;&#19968;&#20010;&#33521;&#25991;&#21477;&#28857;&#22312;&#34892;&#39318;&#65292;&#24182;&#19982;&#20869;&#23481;&#20013;&#38388;&#19968;&#20010;&#31354;&#26684;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;1. Red
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;1. Red
 2. Green
 3. Blue
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#20250;&#34987;&#32763;&#35793;&#20026;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;ol&amp;gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;lt;ol&amp;gt;
 &amp;lt;li&amp;gt;Red&amp;lt;/li&amp;gt;
 &amp;lt;li&amp;gt;Green&amp;lt;/li&amp;gt;
 &amp;lt;li&amp;gt;Blue&amp;lt;/li&amp;gt;
@@ -468,13 +468,13 @@ dog&amp;#39;s back.&amp;lt;/p&amp;gt;
 
 &lt;p&gt;&#21015;&#34920;&#20013;&#21253;&#21547;&#22810;&#20010;&#27573;&#33853;&#26102;&#27573;&#33853;&#24320;&#22987;&#37117;&#24517;&#39035;&#32553;&#36827;4&#31354;&#26684;&#25110;1&#21046;&#34920;&#31526;&lt;/p&gt;
 &lt;p&gt;ps&#65306;&#34892;&#39318;&#21482;&#35201;&#20986;&#29616;&#12304;&#25968;&#23383;-&#21477;&#28857;-&#31354;&#30333;&#12305;&#65292;&#23601;&#20250;&#32763;&#35793;&#25104;&#39033;&#30446;&#21015;&#34920;&#65292;&#35201;&#36991;&#20813;&#36825;&#31181;&#24773;&#20917;&#38656;&#35201;&#22312;&#21477;&#28857;&#21069;&#21152;&#19978;&#21453;&#26012;&#26464;&#12304;\&#12305;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;1986. What a great season
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;1986. What a great season
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#21069;&#38754;&#30340;&#12304;1986-&#21477;&#28857;-&#31354;&#30333;&#12305;&#20250;&#34987;&#32763;&#35793;&#25104;&#21015;&#34920;&#39033;&#12290;&lt;br /&gt;
 &#27491;&#30830;&#30340;&#20889;&#27861;&#26159;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;1986\. what a great season
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;1986\. what a great season
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -486,14 +486,14 @@ dog&amp;#39;s back.&amp;lt;/p&amp;gt;
 &lt;/ul&gt;
 &lt;p&gt;&#20808;&#35828;&#20195;&#30721;&#21306;&#65306;&lt;/p&gt;
 &lt;p&gt;Markdown&#20013;&#24314;&#31435;&#20195;&#30721;&#21306;&#38750;&#24120;&#31616;&#21333;&#65292;&#21482;&#38656;&#35201;&#31616;&#21333;&#30340;&#22312;&#20195;&#30721;&#21069;&#32553;&#36827;4&#20010;&#31354;&#26684;&#25110;1&#20010;&#21046;&#34920;&#31526;&#21363;&#21487;&#12290;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&#36825;&#26159;&#26222;&#36890;&#27573;&#33853;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&#36825;&#26159;&#26222;&#36890;&#27573;&#33853;
 
     &#36825;&#26159;&#19968;&#27573;&#20195;&#30721;&#21306;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#20250;&#34987;&#32763;&#35793;&#20026;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;lt;p&amp;gt;&#36825;&#26159;&#26222;&#36890;&#27573;&#33853;&amp;lt;/p&amp;gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&amp;lt;p&amp;gt;&#36825;&#26159;&#26222;&#36890;&#27573;&#33853;&amp;lt;/p&amp;gt;
 
 &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&#36825;&#26159;&#19968;&#27573;&#20195;&#30721;&#21306;
 &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
@@ -507,17 +507,71 @@ Markdown&#20013;&#24314;&#31435;&#20195;&#30721;&#22359;&#21482;&#38656;&#35201;
 &#38656;&#35201;&#27880;&#24847;&#30340;&#26159;&#65292;&#22312;&#21452;&#21453;&#24341;&#21495;&lt;code&gt;``&lt;/code&gt;&#21253;&#25324;&#30340;&#33539;&#22260;&#20869;&#65292;&#19968;&#20999;&#21333;&#21453;&#24341;&#21495;&lt;code&gt;`&lt;/code&gt;&#22343;&#20026;&#26222;&#36890;&#23383;&#31526;&#12290;&lt;/p&gt;
 &lt;h4&gt;&#19971;&#12289;&#20998;&#21106;&#32447;&lt;/h4&gt;
 &lt;p&gt;&#20320;&#21487;&#20197;&#22312;&#19968;&#34892;&#20013;&#29992;&#19977;&#20010;&#20197;&#19978;&#30340;&#26143;&#21495;&#12289;&#20943;&#21495;&#12289;&#24213;&#32447;&#26469;&#24314;&#31435;&#19968;&#20010;&#20998;&#38548;&#32447;&#65292;&#34892;&#20869;&#19981;&#33021;&#26377;&#20854;&#20182;&#19996;&#35199;&#12290;&#20320;&#20063;&#21487;&#20197;&#22312;&#26143;&#21495;&#25110;&#26159;&#20943;&#21495;&#20013;&#38388;&#25554;&#20837;&#31354;&#26684;&#12290;&#19979;&#38754;&#27599;&#31181;&#20889;&#27861;&#37117;&#21487;&#20197;&#24314;&#31435;&#20998;&#38548;&#32447;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;***
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;***
 * * *
 ---
 - - -
 ___
 _ _ _
-&lt;/pre&gt;&lt;/div&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2013-03-11-markdown-syntax-learn-part1</guid><pubDate>Mon, 11 Mar 2013 00:59:00 GMT</pubDate></item><item><title>C++Primer &#31508;&#35760; 14&#31456; &#37325;&#36733;&#25805;&#20316;&#31526;&#19982;&#36716;&#25442;</title><link>http://blog.wangfu.info/article/c++_primer_note_14_operator</link><description>&lt;h3&gt;C++Primer &#31508;&#35760; 14&#31456; &#37325;&#36733;&#25805;&#20316;&#31526;&#19982;&#36716;&#25442;&lt;/h3&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/2013-03-11-markdown-syntax-learn-part1</guid><pubDate>Mon, 11 Mar 2013 00:59:00 GMT</pubDate></item><item><title>C++Primer &#31508;&#35760; 15&#31456; &#38754;&#21521;&#23545;&#35937;&#32534;&#31243;</title><link>http://blog.wangfu.info/article/c++_primer_note_15_oo</link><description>&lt;h3&gt;C++Primer &#31508;&#35760; 15&#31456; &#38754;&#21521;&#23545;&#35937;&#32534;&#31243;&lt;/h3&gt;
+&lt;h5&gt;&#21160;&#24577;&#32465;&#23450;&lt;/h5&gt;
+&lt;p&gt;&#36890;&#36807;&#22522;&#31867;&#30340;&#24341;&#29992;&#25110;&#25351;&#38024;&#35843;&#29992;&#34394;&#20989;&#25968;&#26102;&#65292;&#21457;&#22768;&#21160;&#24577;&#32465;&#23450;&#12290;      &lt;br /&gt;
+&#24341;&#29992;&#25110;&#25351;&#38024;&#26082;&#21487;&#20197;&#25351;&#21521;&#22522;&#31867;&#23545;&#35937;&#65292;&#20063;&#21487;&#20197;&#25351;&#21521;&#27966;&#29983;&#31867;&#23545;&#35937;&#65292;&#36825;&#19968;&#20107;&#23454;&#26159;&#21160;&#24577;&#32465;&#23450;&#30340;&#20851;&#38190;&#12290;   &lt;br /&gt;
+&#29992;&#24341;&#29992;&#25110;&#25351;&#38024;&#35843;&#29992;&#30340;&#34394;&#20989;&#25968;&#22312;&#36816;&#34892;&#26102;&#25152;&#25191;&#34892;&#30340;&#20989;&#25968;&#26159;&#24341;&#29992;&#25110;&#25351;&#38024;&#25152;&#25351;&#21521;&#30340;&#23545;&#35937;&#23454;&#38469;&#31867;&#22411;&#25152;&#23450;&#20041;&#30340;&#23454;&#29616;&#12290;&lt;/p&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&#36825;&#37324;&#35201;&#27880;&#24847;&#30340;&#26159;&#65292;&#24517;&#39035;&#26159;&#35843;&#29992;&#34394;&#20989;&#25968;&#26102;&#25165;&#20250;&#21457;&#29983;&#21160;&#24577;&#32465;&#23450;&#65292;&#22914;&#26524;&#35843;&#29992;&#22522;&#31867;&#20013;&#27809;&#26377;&#25351;&#26126;&#20026;virtual&#30340;&#20989;&#25968;&#65292;&#21017;&#30452;&#25509;&#35843;&#29992;&#22522;&#31867;&#30340;&#23454;&#29616;&#65292;&#19981;&#20250;&#35843;&#29992;&#27966;&#29983;&#31867;&#30340;&#22797;&#20889;&#23454;&#29616;&#12290;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&#24341;&#29992;&#21644;&#25351;&#38024;&#30340;&#38745;&#24577;&#31867;&#22411;&#65288;&#32534;&#35793;&#26102;&#21487;&#30693;&#30340;&#31867;&#22411;&#65289;&#19982;&#21160;&#24577;&#31867;&#22411;&#65288;&#25351;&#38024;&#25110;&#24341;&#29992;&#25152;&#32465;&#23450;&#30340;&#23545;&#35937;&#30340;&#23454;&#38469;&#31867;&#22411;&#65292;&#36825;&#26159;&#20165;&#22312;&#36816;&#34892;&#26102;&#25165;&#21487;&#30693;&#30340;&#65289;&#21487;&#20197;&#19981;&#21516;&#65292;&#36825;&#26159;C++&#21487;&#20197;&#23454;&#29616;&lt;strong&gt;&lt;em&gt;&#22810;&#24577;&#24615;&lt;/em&gt;&lt;/strong&gt;&#30340;&#22522;&#30707;&#12290;&lt;/p&gt;
+&lt;h5&gt;&#20316;&#29992;&#22495;&#38480;&#23450;&#31526;&lt;/h5&gt;
+&lt;p&gt;&#20351;&#29992;&#20316;&#29992;&#22495;&#38480;&#23450;&#31526;&#21487;&#20197;&lt;strong&gt;&#35206;&#30422;&#34394;&#20989;&#25968;&#26426;&#21046;&lt;/strong&gt;&#24182;&#24378;&#21046;&#20989;&#25968;&#35843;&#29992;&#20351;&#29992;&#34394;&#20989;&#25968;&#30340;&#29305;&#23450;&#23454;&#29616;&#29256;&#26412;&#12290;     &lt;br /&gt;
+&#31034;&#20363;&#65306; &lt;/p&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;Item_base&lt;span style="color: #666666"&gt;*&lt;/span&gt; baseP &lt;span style="color: #666666"&gt;=&lt;/span&gt; &lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt;child;
+&lt;span style="color: #00BB00; font-weight: bold"&gt;double&lt;/span&gt; d &lt;span style="color: #666666"&gt;=&lt;/span&gt; baseP&lt;span style="color: #666666"&gt;-&amp;gt;&lt;/span&gt;Item_base&lt;span style="color: #666666"&gt;::&lt;/span&gt;net_price(&lt;span style="color: #666666"&gt;42&lt;/span&gt;);
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&#36825;&#27573;&#20195;&#30721;&#23558;&#24378;&#21046;&#35843;&#29992;Item_base&#20013;&#23450;&#20041;&#30340;net_price()&#23454;&#29616;&#65292;&#19981;&#20250;&#38543;&#30528;baseP&#25351;&#38024;&#25351;&#21521;&#23545;&#35937;&#30340;&#23454;&#38469;&#31867;&#22411;&#20108;&#21464;&#21270;&#12290;  &lt;br /&gt;
+&#27966;&#29983;&#31867;&#34394;&#20989;&#25968;&#35843;&#29992;&#22522;&#31867;&#23454;&#29616;&#29256;&#26412;&#26102;&#65292;&#24517;&#39035;&#26174;&#24335;&#20351;&#29992;&#20316;&#29992;&#22495;&#38480;&#23450;&#31526;&#12290;&lt;/p&gt;
+&lt;h5&gt;&#34394;&#20989;&#25968;&#30340;&#40664;&#35748;&#23454;&#21442;&lt;/h5&gt;
+&lt;p&gt;&#34394;&#20989;&#25968;&#30340;&#40664;&#35748;&#23454;&#21442;&#30340;&#20540;&#30001;&#35843;&#29992;&#35813;&#20989;&#25968;&#30340;&#31867;&#22411;&#23450;&#20041;&#65292;&#19982;&#23545;&#35937;&#30340;&#21160;&#24577;&#31867;&#22411;&#26080;&#20851;&#12290;     &lt;br /&gt;
+&#22312;&#21516;&#19968;&#34394;&#20989;&#25968;&#30340;&#22522;&#31867;&#23454;&#29616;&#21644;&#27966;&#29983;&#31867;&#23454;&#29616;&#20013;&#20351;&#29992;&#19981;&#21516;&#30340;&#40664;&#35748;&#23454;&#21442;&#20960;&#20046;&#19968;&#23450;&#20250;&#24341;&#36215;&#40635;&#28902;&#12290;     &lt;br /&gt;
+&#22914;&#26524;&#36890;&#36807;&#22522;&#31867;&#30340;&#24212;&#29992;&#25110;&#25351;&#38024;&#35843;&#29992;&#34394;&#20989;&#25968;&#65292;&#20294;&#23454;&#38469;&#25191;&#34892;&#30340;&#26159;&#27966;&#29983;&#31867;&#20013;&#23450;&#20041;&#30340;&#23454;&#29616;&#29256;&#26412;&#65288;&#24212;&#29992;&#25110;&#25351;&#38024;&#25351;&#21521;&#27966;&#29983;&#31867;&#23545;&#35937;&#65289;&#65292;&#36825;&#26102;&#23601;&#21487;&#33021;&#20250;&#20986;&#29616;&#38382;&#39064;&#65292;&#22240;&#20026;&#27492;&#26102;&#22522;&#31867;&#23450;&#20041;&#30340;&#40664;&#35748;&#23454;&#21442;&#20540;&#23558;&#20256;&#36882;&#32473;&#27966;&#29983;&#31867;&#30340;&#23454;&#29616;&#65292;&#32780;&#38750;&#20351;&#29992;&#27966;&#29983;&#31867;&#33258;&#24049;&#23450;&#20041;&#30340;&#40664;&#35748;&#23454;&#21442;&#26469;&#35843;&#29992;&#12290;&lt;/p&gt;
+&lt;h5&gt;is a&lt;/h5&gt;
+&lt;p&gt;&#25152;&#26377;&#30340;&#22522;&#31867;&#19982;&#27966;&#29983;&#31867;&#30340;&#20851;&#31995;&#24212;&#35813;&#36981;&#24490;&#27966;&#29983;&#31867;&#8220;&lt;strong&gt;&#26159;&#19968;&#31181;&#65288;is a&#65289;&lt;/strong&gt;&#8221;&#22522;&#31867;&#30340;&#20851;&#31995;&#12290;  &lt;br /&gt;
+&#32780;&#38750;&#27966;&#29983;&#31867;&#8220;&lt;strong&gt;&#26377;&#19968;&#20010;&#65288;has a&#65289;&lt;/strong&gt;&#8221;&#22522;&#31867;&#12290;&lt;/p&gt;
+&lt;h5&gt;&#32487;&#25215;&#35775;&#38382;&#32423;&#21035;&lt;/h5&gt;
+&lt;p&gt;&#27966;&#29983;&#31867;&#21487;&#20197;&#24674;&#22797;&#32487;&#25215;&#25104;&#21592;&#30340;&#35775;&#38382;&#32423;&#21035;&#12290; &lt;br /&gt;
+&#20363;&#22914;&#31867;A private&#23454;&#29616;&#32487;&#25215;&#31867;B&#65292;&#31867;B&#20013;&#26377;Public&#25104;&#21592;size&#65292;&#37027;&#20040;&#65292;&#22312;&#31867;A&#30340;public&#37096;&#20998;&#20013;&#22686;&#21152;using&#22768;&#26126;&#21363;&#21487;&#12290;  &lt;br /&gt;
+&#31034;&#20363;&#65306; &lt;/p&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;class&lt;/span&gt; &lt;span style="color: #0000FF"&gt;A&lt;/span&gt; &lt;span style="color: #666666"&gt;:&lt;/span&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;private&lt;/span&gt; B{
+&lt;span style="color: #A0A000"&gt;public:&lt;/span&gt;
+    &lt;span style="color: #AA22FF; font-weight: bold"&gt;using&lt;/span&gt; B&lt;span style="color: #666666"&gt;::&lt;/span&gt;size;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&#27966;&#29983;&#31867;&#21487;&#20197;&#24674;&#22797;&#32487;&#25215;&#25104;&#21592;&#30340;&#35775;&#38382;&#32423;&#21035;&#65292;&#20294;&#26159;&#19981;&#33021;&#20351;&#35775;&#38382;&#32423;&#21035;&#27604;&#22522;&#31867;&#20013;&#21407;&#26469;&#25351;&#23450;&#30340;&#26356;&#20005;&#26684;&#25110;&#26356;&#23485;&#26494;&#12290;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&#20351;&#29992;class&#20445;&#30041;&#23383;&#27966;&#29983;&#26102;&#40664;&#35748;&#20855;&#26377;private&#32487;&#25215;&#65292;&#20351;&#29992;struct&#26102;&#40664;&#35748;&#20855;&#26377;public&#32487;&#25215;&#65292;&#20294;&#26159;&#20351;&#29992;&#40664;&#35748;&#32487;&#25215;&#26159;&#38750;&#24120;&#32597;&#35265;&#30340;&#65292;&#19981;&#35770;&#20309;&#26102;&#37117;&#24212;&#26174;&#24335;&#25351;&#26126;&#32487;&#25215;&#30340;&#27966;&#29983;&#20445;&#25252;&#32423;&#21035;&#12290;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;&#32487;&#25215;&#19982;&#38745;&#24577;&#25104;&#21592;&lt;/h5&gt;
+&lt;p&gt;&#22914;&#26524;&#22522;&#31867;&#23450;&#20041;&#20102;static&#25104;&#21592;&#65292;&#21017;&lt;strong&gt;&lt;em&gt;&#25972;&#20010;&#32487;&#25215;&#23618;&#27425;&#20013;&#21482;&#26377;&#36825;&#19968;&#20010;&#36825;&#26679;&#30340;&#25104;&#21592;&lt;/em&gt;&lt;/strong&gt;&#12290;     &lt;br /&gt;
+&#26080;&#35770;&#20174;&#22522;&#31867;&#27966;&#29983;&#20986;&#20102;&#22810;&#23569;&#20010;&#27966;&#29983;&#31867;&#65292;&#25152;&#26377;&#36825;&#20123;&#31867;&#22312;&#35775;&#38382;static&#25104;&#21592;&#26102;&#25152;&#35775;&#38382;&#30340;&#26159;&#21516;&#19968;&#20010;&#25104;&#21592;&#12290;&lt;/p&gt;
+&lt;h5&gt;&#22522;&#31867;&#19982;&#27966;&#29983;&#31867;&#30340;&#36716;&#25442;&lt;/h5&gt;
+&lt;p&gt;&#27966;&#29983;&#31867;&#21487;&#20197;&#36716;&#25442;&#20026;&#22522;&#31867;&#65292;&#20294;&#20165;&#20165;&#23616;&#38480;&#20110;&#24341;&#29992;&#19982;&#25351;&#38024;&#12290;   &lt;br /&gt;
+&#36824;&#26377;&#29992;&#27966;&#29983;&#31867;&#23545;&#35937;&#23545;&#22522;&#31867;&#23545;&#35937;&#36827;&#34892;&#21021;&#22987;&#21270;&#65292;&#21021;&#22987;&#21270;&#26102;&#27966;&#29983;&#31867;&#30340;&#33258;&#26377;&#37096;&#20998;&#34987;&#24573;&#30053;&#12290;     &lt;/p&gt;
+&lt;p&gt;&#20174;&#22522;&#31867;&#21040;&#27966;&#29983;&#31867;&#27809;&#26377;&#33258;&#21160;&#30340;&#36716;&#25442;&#65292;&#23601;&#31639;&#26159;&#22522;&#31867;&#30340;&#25351;&#38024;&#25351;&#21521;&#27966;&#29983;&#31867;&#23545;&#35937;&#65292;&#24403;&#29992;&#36825;&#20010;&#25351;&#38024;&#32473;&#27966;&#29983;&#31867;&#25351;&#38024;&#36171;&#20540;&#26102;&#20063;&#20250;&#20986;&#29616;&#32534;&#35793;&#38169;&#35823;&#12290;&#22240;&#20026;&#32534;&#35793;&#22120;&#26080;&#27861;&#30693;&#36947;&#21160;&#24577;&#30340;&#32465;&#23450;&#26159;&#21542;&#23433;&#20840;&#65292;&#21482;&#33021;&#36890;&#36807;&#38745;&#24577;&#31867;&#22411;&#26469;&#30424;&#21028;&#26029;&#25805;&#20316;&#26159;&#21542;&#23433;&#20840;&#12290;     &lt;br /&gt;
+&#22914;&#26524;&#27492;&#25805;&#20316;&#30495;&#30340;&#23433;&#20840;&#65292;&#37027;&#20040;&#21487;&#20197;&#20351;&#29992;static_cast&#24378;&#21046;&#32534;&#35793;&#22120;&#36827;&#34892;&#36716;&#25442;&#65292;&#25110;&#32773;&#20351;&#29992;dynamic_cast&#30003;&#35831;&#22312;&#36816;&#34892;&#26102;&#26816;&#26597;&#12290; &lt;/p&gt;
+&lt;p&gt;To Be Continued 2010/9/12&lt;/p&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/c++_primer_note_15_oo</guid><pubDate>Fri, 10 Sep 2010 20:02:00 GMT</pubDate></item><item><title>C++Primer &#31508;&#35760; 14&#31456; &#37325;&#36733;&#25805;&#20316;&#31526;&#19982;&#36716;&#25442;</title><link>http://blog.wangfu.info/article/c++_primer_note_14_operator</link><description>&lt;h3&gt;C++Primer &#31508;&#35760; 14&#31456; &#37325;&#36733;&#25805;&#20316;&#31526;&#19982;&#36716;&#25442;&lt;/h3&gt;
 &lt;h4&gt;&#37325;&#36733;&#25805;&#20316;&#31526;&lt;/h4&gt;
 &lt;h5&gt;&#37325;&#36733;&#30340;&#25805;&#20316;&#21517;&#65306;&lt;/h5&gt;
 &lt;p&gt;&#21487;&#37325;&#36733;&#25805;&#20316;&#31526;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;+ - * / % ^     
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;+ - * / % ^     
 &amp;amp; | ~ ! , =     
 &amp;lt; &amp;gt; &amp;lt;= &amp;gt;= ++ --     
 &amp;lt;&amp;lt; &amp;gt;&amp;gt; == != &amp;amp;&amp;amp; ||   
@@ -528,13 +582,13 @@ _ _ _
 
 
 &lt;p&gt;&#19981;&#21487;&#37325;&#36733;&#25805;&#20316;&#31526;&#65306;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;:: .* . ?:
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;:: .* . ?:
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&#36890;&#36807;&#36830;&#25509;&#20854;&#20182;&#21512;&#27861;&#31526;&#21495;&#21487;&#20197;&#21019;&#24314;&#26032;&#30340;&#25805;&#20316;&#31526;&#12290;&#20363;&#22914;&#65292;&#23450;&#20041;&#19968;&#20010; operator** 
 &#20197;&#25552;&#20379;&#27714;&#24130;&#36816;&#31639;&#26159;&#21512;&#27861;&#30340;&#12290;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&#20869;&#32622;&#36923;&#36753;&#19982;&#65288;&amp;amp;&amp;amp;&#65289;&#21644;&#20869;&#32622;&#36923;&#36753;&#25110;&#65288;||&#65289;&#25805;&#20316;&#31526;&#20351;&#29992;&#30701;&#36335;&#27714;&#20540;&#65292;&#22914;&#26524;&#37325;&#26032;&#23450;&#20041;&#35813;&#25805;&#20316;&#31526;&#65292;&#20002;&#22833;&#25805;&#20316;&#31526;&#30340;&#30701;&#36335;&#27714;&#20540;&#29305;&#24449;&#12290;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&#20869;&#32622;&#36923;&#36753;&#19982;&#65288;&amp;amp;&amp;amp;&#65289;&#21644;&#20869;&#32622;&#36923;&#36753;&#25110;&#65288;||&#65289;&#25805;&#20316;&#31526;&#20351;&#29992;&#30701;&#36335;&#27714;&#20540;&#65292;&#22914;&#26524;&#37325;&#26032;&#23450;&#20041;&#35813;&#25805;&#20316;&#31526;&#65292;&#20002;&#22833;&#25805;&#20316;&#31526;&#30340;&#30701;&#36335;&#27714;&#20540;&#29305;&#24449;&#12290;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -578,12 +632,12 @@ _ _ _
 &lt;p&gt;&#36820;&#22238;&#20540;&#30340;const&#19982;&#21542;&#20063;&#35201;&#27880;&#24847;&#12290;&#36825;&#20123;&#37117;&#24212;&#26681;&#25454;&#31867;&#30340;&#20855;&#20307;&#20351;&#29992;&#24773;&#20917;&#26469;&#21028;&#26029;&#12290;&lt;/p&gt;
 &lt;p&gt;&#22914;&#26524;&#23450;&#20041;&#20102;&#19979;&#26631;&#25805;&#20316;&#31526;&#65292;&#36890;&#24120;&#24773;&#20917;&#19979;&#35201;&#23450;&#20041;const&#21644;&#38750;const&#20004;&#20010;&#29256;&#26412;&#12290;&#20182;&#20204;&#30340;&#20989;&#25968;&#20307;&#24212;&#35813;&#26159;&#19968;&#26679;&#30340;&#65292;&#21482;&#26159;&#22312;&#20989;&#25968;&#21517;&#22768;&#26126;&#23450;&#20041;&#26102;&#26377;&#20851;&#38190;&#23383;&#19981;&#21516;&#12290;&lt;/p&gt;
 &lt;p&gt;&#31034;&#20363;&#65306;   &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="k"&gt;operator&lt;/span&gt;&lt;span class="p"&gt;[](&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;size_t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;//const&#29256;&#26412;         &lt;/span&gt;
-&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="k"&gt;operator&lt;/span&gt;&lt;span class="p"&gt;[](&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;size_t&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="c1"&gt;//&#38750;const&#29256;&#26412;&lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt; &lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; &lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;operator&lt;/span&gt;[](&lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt; &lt;span style="color: #00BB00; font-weight: bold"&gt;size_t&lt;/span&gt;) &lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt;; &lt;span style="color: #008800; font-style: italic"&gt;//const&#29256;&#26412;         &lt;/span&gt;
+&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; &lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;operator&lt;/span&gt;[](&lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt; &lt;span style="color: #00BB00; font-weight: bold"&gt;size_t&lt;/span&gt;);&lt;span style="color: #008800; font-style: italic"&gt;//&#38750;const&#29256;&#26412;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="codehilite"&gt;&lt;pre&gt;const&#29256;&#26412;&#20013;&#31532;&#19968;&#20010;const&#20026;&#36820;&#22238;&#20540;&#30340;&#20462;&#39280;&#65292;       
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;const&#29256;&#26412;&#20013;&#31532;&#19968;&#20010;const&#20026;&#36820;&#22238;&#20540;&#30340;&#20462;&#39280;&#65292;       
 &#31532;&#20108;&#20010;const&#20026;&#21442;&#25968;&#20462;&#39280;&#20851;&#38190;&#23383;&#65292;       
 &#31532;&#19977;&#20010;const&#20026;&#20989;&#25968;&#20462;&#25913;&#25104;&#21592;&#26435;&#38480;&#30340;&#20462;&#39280;&#20851;&#38190;&#23383;&#12290;
 &lt;/pre&gt;&lt;/div&gt;
@@ -599,15 +653,15 @@ _ _ _
 &lt;/ul&gt;
 &lt;h5&gt;&#35843;&#29992;&#25805;&#20316;&#31526;&#37325;&#36733;&lt;/h5&gt;
 &lt;p&gt;&#23450;&#20041;&#20102;&#35843;&#29992;&#25805;&#20316;&#31526;&#30340;&#31867;&#65292;&#20854;&#23545;&#35937;&#24120;&#31216;&#20026;&#20989;&#25968;&#23545;&#35937;&#65288;Function Object&#65289;&#65292;&#21363;&#23427;&#20204;&#26159;&#34892;&#20026;&#31867;&#20284;&#20989;&#25968;&#30340;&#23545;&#35937;&#12290;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;absInt&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="k"&gt;operator&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-        &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;};&lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;struct&lt;/span&gt; absInt{
+    &lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; &lt;span style="color: #AA22FF; font-weight: bold"&gt;operator&lt;/span&gt;() (&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; val){
+        &lt;span style="color: #AA22FF; font-weight: bold"&gt;return&lt;/span&gt; val &lt;span style="color: #666666"&gt;&amp;lt;&lt;/span&gt; &lt;span style="color: #666666"&gt;0&lt;/span&gt; &lt;span style="color: #666666"&gt;?&lt;/span&gt; &lt;span style="color: #666666"&gt;-&lt;/span&gt; val &lt;span style="color: #666666"&gt;:&lt;/span&gt; val;
+        }
+};
 
-&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;42&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="n"&gt;absInt&lt;/span&gt; &lt;span class="n"&gt;absObj&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="kt"&gt;unsigned&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;ui&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;absObj&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; i&lt;span style="color: #666666"&gt;=42&lt;/span&gt;;
+absInt absObj;
+&lt;span style="color: #00BB00; font-weight: bold"&gt;unsigned&lt;/span&gt; &lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; ui &lt;span style="color: #666666"&gt;=&lt;/span&gt; absObj(i);
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -647,17 +701,17 @@ _ _ _
 &lt;/ul&gt;
 &lt;h5&gt;&#36716;&#25442;&#25805;&#20316;&#31526;&lt;/h5&gt;
 &lt;p&gt;&lt;strong&gt;&#36716;&#25442;&#25805;&#20316;&#31526;(conversion operator)&lt;/strong&gt;&#26159;&#19968;&#31181;&#29305;&#27530;&#30340;&#31867;&#25104;&#21592;&#20989;&#25968;&#12290;&#23427;&#23450;&#20041;&#23558;&#31867;&#31867;&#22411;&#20540;&#36716;&#21464;&#20026;&#20854;&#20182;&#31867;&#22411;&#20540;&#30340;&#36716;&#25442;&#12290;&#36716;&#25442;&#25805;&#20316;&#31526;&#22312;&#31867;&#23450;&#20041;&#20307;&#20869;&#22768;&#26126;&#65292;&#22312;&#20445;&#30041;&#23383;operator&#20043;&#21518;&#36319;&#30528;&#36716;&#25442;&#30340;&#30446;&#26631;&#31867;&#22411;&#12290;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;SmallInt&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-&lt;span class="nl"&gt;public:&lt;/span&gt; 
-    &lt;span class="n"&gt;SmallInt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-    &lt;span class="p"&gt;{&lt;/span&gt; 
-        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="o"&gt;||&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;255&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-        &lt;span class="k"&gt;throw&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;out_of_range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Bad SmallInt initializer&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
-    &lt;span class="p"&gt;}&lt;/span&gt; 
-    &lt;span class="k"&gt;operator&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; 
-&lt;span class="nl"&gt;private:&lt;/span&gt; 
-    &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="kt"&gt;size_t&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;class&lt;/span&gt; &lt;span style="color: #0000FF"&gt;SmallInt&lt;/span&gt; { 
+&lt;span style="color: #A0A000"&gt;public:&lt;/span&gt; 
+    SmallInt(&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; i &lt;span style="color: #666666"&gt;=&lt;/span&gt; &lt;span style="color: #666666"&gt;0&lt;/span&gt;)&lt;span style="color: #666666"&gt;:&lt;/span&gt; val(i) 
+    { 
+        &lt;span style="color: #AA22FF; font-weight: bold"&gt;if&lt;/span&gt; (i &lt;span style="color: #666666"&gt;&amp;lt;&lt;/span&gt; &lt;span style="color: #666666"&gt;0&lt;/span&gt; &lt;span style="color: #666666"&gt;||&lt;/span&gt; i &lt;span style="color: #666666"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color: #666666"&gt;255&lt;/span&gt;) 
+        &lt;span style="color: #AA22FF; font-weight: bold"&gt;throw&lt;/span&gt; std&lt;span style="color: #666666"&gt;::&lt;/span&gt;out_of_range(&lt;span style="color: #BB4444"&gt;&amp;quot;Bad SmallInt initializer&amp;quot;&lt;/span&gt;); 
+    } 
+    &lt;span style="color: #AA22FF; font-weight: bold"&gt;operator&lt;/span&gt; &lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt;() &lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt; { &lt;span style="color: #AA22FF; font-weight: bold"&gt;return&lt;/span&gt; val; } 
+&lt;span style="color: #A0A000"&gt;private:&lt;/span&gt; 
+    std&lt;span style="color: #666666"&gt;::&lt;/span&gt;&lt;span style="color: #00BB00; font-weight: bold"&gt;size_t&lt;/span&gt; val;
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -668,7 +722,7 @@ _ _ _
 &lt;li&gt;&#31867;&#31867;&#22411;&#36716;&#25442;&#35843;&#29992;&#20043;&#21518;&#19981;&#33021;&#20877;&#36319;&#21478;&#19968;&#20010;&#31867;&#31867;&#22411;&#36716;&#25442;&#12290;&#22914;&#26524;&#38656;&#35201;&#22810;&#20010;&#31867;&#31867;&#22411;&#36716;&#25442;&#65292;&#21017;&#20195;&#30721;&#23558;&#20986;&#38169;&#12290;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&#22914;&#26524;&#20004;&#20010;&#36716;&#25442;&#25805;&#20316;&#31526;&#37117;&#21487;&#29992;&#22312;&#19968;&#20010;&#35843;&#29992;&#20013;&#65292;&#32780;&#19988;&#22312;&#36716;&#25442;&#20989;&#25968;&#20043;&#21518;&#36824;&#23384;&#22312;&#26631;&#20934;&#36716;&#25442;&#65292;&#21017;&#23384;&#22312;&#19968;&#20010;&#32534;&#35793;&#38169;&#35823;&#65292;&#22240;&#20026;&#32534;&#35793;&#22120;&#26080;&#27861;&#36873;&#25321;&#36716;&#25442;&#20989;&#25968;&#12290; &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&#19968;&#33324;&#32780;&#35328;&#65292;&#32473;&#20986;&#19968;&#20010;&#31867;&#19982;&#20004;&#20010;&#20869;&#32622;&#31867;&#22411;&#20043;&#38388;&#30340;&#36716;&#25442;&#26159;&#19981;&#22909;&#30340;&#20570;&#27861;&#12290;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&#19968;&#33324;&#32780;&#35328;&#65292;&#32473;&#20986;&#19968;&#20010;&#31867;&#19982;&#20004;&#20010;&#20869;&#32622;&#31867;&#22411;&#20043;&#38388;&#30340;&#36716;&#25442;&#26159;&#19981;&#22909;&#30340;&#20570;&#27861;&#12290;
 &#23454;&#38469;&#19978;&#36716;&#25442;&#25805;&#20316;&#31526;&#23601;&#26159;&#20026;&#20102;&#35753;&#31867;&#31867;&#22411;&#33021;&#22815;&#24819;&#20869;&#32622;&#31867;&#22411;&#19968;&#26679;&#33021;&#22815;&#36827;&#34892;&#38544;&#24335;&#36716;&#25442;&#65292;&#20294;&#26159;&#21482;&#33021;&#36716;&#25442;&#19968;&#27425;&#12290;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -690,17 +744,17 @@ _ _ _
 &lt;h5&gt;&#22797;&#21046;&#26500;&#36896;&#20989;&#25968;&#65306;&lt;/h5&gt;
 &lt;p&gt;&#22797;&#21046;&#26500;&#36896;&#20989;&#25968;&#23601;&#26159;&#25509;&#21463;&#21333;&#20010;&#31867;&#31867;&#22411;&#24341;&#29992;&#24418;&#21442;&#65288;&#36890;&#24120;&#29992;const&#20462;&#39280;&#65289;&#30340;&#26500;&#36896;&#20989;&#25968;&#12290;&#35813;&#26500;&#36896;&#20989;&#25968;&#19968;&#33324;&#19981;&#24212;&#35774;&#32622;&#20026;&lt;code&gt;explicit&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;e.g.:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EXP&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nl"&gt;public:&lt;/span&gt;
-        &lt;span class="n"&gt;EXP&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt; &lt;span class="c1"&gt;//default constructor&lt;/span&gt;
-        &lt;span class="n"&gt;EXP&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="n"&gt;EXP&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;//copy constructor&lt;/span&gt;
-        &lt;span class="c1"&gt;//...&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;class&lt;/span&gt; &lt;span style="color: #0000FF"&gt;EXP&lt;/span&gt;
+{
+    &lt;span style="color: #A0A000"&gt;public:&lt;/span&gt;
+        EXP(); &lt;span style="color: #008800; font-style: italic"&gt;//default constructor&lt;/span&gt;
+        EXP(&lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt; EXP&lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt;) &lt;span style="color: #008800; font-style: italic"&gt;//copy constructor&lt;/span&gt;
+        &lt;span style="color: #008800; font-style: italic"&gt;//...&lt;/span&gt;
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="codehilite"&gt;&lt;pre&gt;&#22797;&#21046;&#26500;&#36896;&#20989;&#25968;&#30340;&#38590;&#28857;&#22312;&#20110;&#24847;&#35782;&#21040;&#38656;&#35201;&#22797;&#21046;&#26500;&#36896;&#20989;&#25968;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&#22797;&#21046;&#26500;&#36896;&#20989;&#25968;&#30340;&#38590;&#28857;&#22312;&#20110;&#24847;&#35782;&#21040;&#38656;&#35201;&#22797;&#21046;&#26500;&#36896;&#20989;&#25968;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -726,50 +780,50 @@ static &#25968;&#25454;&#25104;&#21592;&#30340;&#26512;&#26500;&#20989;&#25968;&
 &#26368;&#21518;&#65292;&#35843;&#29992;&#26512;&#26500;&#20989;&#25968;&#26102;&#65292;&#26512;&#26500;&#20989;&#25968;&#20943;&#23569;&#20351;&#29992;&#35745;&#25968;&#30340;&#20540;&#65292;&#22914;&#26524;&#35745;&#25968;&#20943;&#33267; 0&#65292;&#21017;&#21024;&#38500;
 &#22522;&#30784;&#23545;&#35937;&#12290; &lt;/p&gt;
 &lt;p&gt;&#35753;&#26234;&#33021;&#25351;&#38024;&#36127;&#36131;&#21024;&#38500;&#20849;&#20139;&#23545;&#35937;&#65292;&#21487;&#20197;&#36991;&#20813;&#24748;&#22402;&#25351;&#38024;&#30340;&#20986;&#29616;&#12290;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="n"&gt;HasPtr&lt;/span&gt; &lt;span class="nf"&gt;p1&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;obj&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;42&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
-&lt;span class="n"&gt;HasPtr&lt;/span&gt; &lt;span class="nf"&gt;p2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// p1 and p2 both point to same int object&lt;/span&gt;
-&lt;span class="n"&gt;HasPtr&lt;/span&gt; &lt;span class="nf"&gt;p3&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// p1, p2, and p3 all point to same int object &lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; obj; 
+HasPtr &lt;span style="color: #00A000"&gt;p1&lt;/span&gt;(&lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt;obj, &lt;span style="color: #666666"&gt;42&lt;/span&gt;); 
+HasPtr &lt;span style="color: #00A000"&gt;p2&lt;/span&gt;(p1); &lt;span style="color: #008800; font-style: italic"&gt;// p1 and p2 both point to same int object&lt;/span&gt;
+HasPtr &lt;span style="color: #00A000"&gt;p3&lt;/span&gt;(p1); &lt;span style="color: #008800; font-style: italic"&gt;// p1, p2, and p3 all point to same int object &lt;/span&gt;
 
-&lt;span class="c1"&gt;// private class for use by HasPtr only &lt;/span&gt;
-&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;U_Ptr&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;friend&lt;/span&gt; &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;HasPtr&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;ip&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="kt"&gt;size_t&lt;/span&gt; &lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;U_Ptr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="n"&gt;ip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;){}&lt;/span&gt;
-    &lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;U_Ptr&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="k"&gt;delete&lt;/span&gt; &lt;span class="n"&gt;ip&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
-&lt;span class="p"&gt;};&lt;/span&gt;&lt;span class="c1"&gt;//&#36825;&#26159;&#19968;&#20010;&#35745;&#25968;&#31867;&#30340;&#31034;&#20363;&#12290;&lt;/span&gt;
+&lt;span style="color: #008800; font-style: italic"&gt;// private class for use by HasPtr only &lt;/span&gt;
+&lt;span style="color: #AA22FF; font-weight: bold"&gt;class&lt;/span&gt; &lt;span style="color: #0000FF"&gt;U_Ptr&lt;/span&gt;{
+    &lt;span style="color: #AA22FF; font-weight: bold"&gt;friend&lt;/span&gt; &lt;span style="color: #AA22FF; font-weight: bold"&gt;class&lt;/span&gt; &lt;span style="color: #0000FF"&gt;HasPtr&lt;/span&gt;;
+    &lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; &lt;span style="color: #666666"&gt;*&lt;/span&gt;ip;
+    &lt;span style="color: #00BB00; font-weight: bold"&gt;size_t&lt;/span&gt; use;
+    U_Ptr(&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; &lt;span style="color: #666666"&gt;*&lt;/span&gt;p)&lt;span style="color: #666666"&gt;:&lt;/span&gt;ip(p),use(&lt;span style="color: #666666"&gt;1&lt;/span&gt;){}
+    &lt;span style="color: #666666"&gt;~&lt;/span&gt;U_Ptr(){&lt;span style="color: #AA22FF; font-weight: bold"&gt;delete&lt;/span&gt; ip;}
+};&lt;span style="color: #008800; font-style: italic"&gt;//&#36825;&#26159;&#19968;&#20010;&#35745;&#25968;&#31867;&#30340;&#31034;&#20363;&#12290;&lt;/span&gt;
 
-&lt;span class="cm"&gt;/* smart pointer class: takes ownership of the dynamically allocated &lt;/span&gt;
-&lt;span class="cm"&gt;* object to which it is bound &lt;/span&gt;
-&lt;span class="cm"&gt;* User code must dynamically allocate an object to initialize a HasPtr &lt;/span&gt;
-&lt;span class="cm"&gt;* and must not delete that object; the HasPtr class will delete it &lt;/span&gt;
-&lt;span class="cm"&gt;*/&lt;/span&gt; 
-&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;HasPtr&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
-&lt;span class="nl"&gt;public:&lt;/span&gt; 
-    &lt;span class="c1"&gt;// HasPtr owns the pointer; pmust have been dynamically allocated &lt;/span&gt;
-    &lt;span class="n"&gt;HasPtr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;U_Ptr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; 
-    &lt;span class="c1"&gt;// copy members and increment the use count &lt;/span&gt;
-    &lt;span class="n"&gt;HasPtr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="n"&gt;HasPtr&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;orig&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; 
-    &lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;orig&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;orig&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; 
-    &lt;span class="n"&gt;HasPtr&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt; &lt;span class="k"&gt;operator&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="n"&gt;HasPtr&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; 
-    &lt;span class="c1"&gt;// if use count goes to zero, delete the U_Ptr object &lt;/span&gt;
-    &lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;HasPtr&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;delete&lt;/span&gt; &lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="p"&gt;}&lt;/span&gt; 
-&lt;span class="nl"&gt;private:&lt;/span&gt; 
-    &lt;span class="n"&gt;U_Ptr&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// points to use-counted U_Ptr class &lt;/span&gt;
-    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;};&lt;/span&gt; 
+&lt;span style="color: #008800; font-style: italic"&gt;/* smart pointer class: takes ownership of the dynamically allocated &lt;/span&gt;
+&lt;span style="color: #008800; font-style: italic"&gt;* object to which it is bound &lt;/span&gt;
+&lt;span style="color: #008800; font-style: italic"&gt;* User code must dynamically allocate an object to initialize a HasPtr &lt;/span&gt;
+&lt;span style="color: #008800; font-style: italic"&gt;* and must not delete that object; the HasPtr class will delete it &lt;/span&gt;
+&lt;span style="color: #008800; font-style: italic"&gt;*/&lt;/span&gt; 
+&lt;span style="color: #AA22FF; font-weight: bold"&gt;class&lt;/span&gt; &lt;span style="color: #0000FF"&gt;HasPtr&lt;/span&gt; { 
+&lt;span style="color: #A0A000"&gt;public:&lt;/span&gt; 
+    &lt;span style="color: #008800; font-style: italic"&gt;// HasPtr owns the pointer; pmust have been dynamically allocated &lt;/span&gt;
+    HasPtr(&lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; &lt;span style="color: #666666"&gt;*&lt;/span&gt;p, &lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; i)&lt;span style="color: #666666"&gt;:&lt;/span&gt; ptr(&lt;span style="color: #AA22FF; font-weight: bold"&gt;new&lt;/span&gt; U_Ptr(p)), val(i) { } 
+    &lt;span style="color: #008800; font-style: italic"&gt;// copy members and increment the use count &lt;/span&gt;
+    HasPtr(&lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt; HasPtr &lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt;orig)&lt;span style="color: #666666"&gt;:&lt;/span&gt; 
+    ptr(orig.ptr), val(orig.val) { &lt;span style="color: #666666"&gt;++&lt;/span&gt;ptr&lt;span style="color: #666666"&gt;-&amp;gt;&lt;/span&gt;use; } 
+    HasPtr&lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt; &lt;span style="color: #AA22FF; font-weight: bold"&gt;operator&lt;/span&gt;&lt;span style="color: #666666"&gt;=&lt;/span&gt;(&lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt; HasPtr&lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt;); 
+    &lt;span style="color: #008800; font-style: italic"&gt;// if use count goes to zero, delete the U_Ptr object &lt;/span&gt;
+    &lt;span style="color: #666666"&gt;~&lt;/span&gt;HasPtr() { &lt;span style="color: #AA22FF; font-weight: bold"&gt;if&lt;/span&gt; (&lt;span style="color: #666666"&gt;--&lt;/span&gt;ptr&lt;span style="color: #666666"&gt;-&amp;gt;&lt;/span&gt;use &lt;span style="color: #666666"&gt;==&lt;/span&gt; &lt;span style="color: #666666"&gt;0&lt;/span&gt;) &lt;span style="color: #AA22FF; font-weight: bold"&gt;delete&lt;/span&gt; ptr; } 
+&lt;span style="color: #A0A000"&gt;private:&lt;/span&gt; 
+    U_Ptr &lt;span style="color: #666666"&gt;*&lt;/span&gt;ptr; &lt;span style="color: #008800; font-style: italic"&gt;// points to use-counted U_Ptr class &lt;/span&gt;
+    &lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; val; 
+}; 
 
-&lt;span class="n"&gt;HasPtr&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;HasPtr&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="k"&gt;operator&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="n"&gt;HasPtr&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;rhs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-&lt;span class="p"&gt;{&lt;/span&gt; 
-    &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;rhs&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// increment use count on rhs first &lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;use&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
-    &lt;span class="k"&gt;delete&lt;/span&gt; &lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// if use count goes to 0 on this object, &lt;/span&gt;
-    &lt;span class="k"&gt;delete&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; 
-    &lt;span class="n"&gt;ptr&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;rhs&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ptr&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// copy the U_Ptr object &lt;/span&gt;
-    &lt;span class="n"&gt;val&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;rhs&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;val&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c1"&gt;// copy the int member &lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="k"&gt;this&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; 
-&lt;span class="p"&gt;}&lt;/span&gt; 
+HasPtr&lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt; HasPtr&lt;span style="color: #666666"&gt;::&lt;/span&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;operator&lt;/span&gt;&lt;span style="color: #666666"&gt;=&lt;/span&gt;(&lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt; HasPtr &lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt;rhs) 
+{ 
+    &lt;span style="color: #666666"&gt;++&lt;/span&gt;rhs.ptr&lt;span style="color: #666666"&gt;-&amp;gt;&lt;/span&gt;use; &lt;span style="color: #008800; font-style: italic"&gt;// increment use count on rhs first &lt;/span&gt;
+    &lt;span style="color: #AA22FF; font-weight: bold"&gt;if&lt;/span&gt; (&lt;span style="color: #666666"&gt;--&lt;/span&gt;ptr&lt;span style="color: #666666"&gt;-&amp;gt;&lt;/span&gt;use &lt;span style="color: #666666"&gt;==&lt;/span&gt; &lt;span style="color: #666666"&gt;0&lt;/span&gt;) 
+    &lt;span style="color: #AA22FF; font-weight: bold"&gt;delete&lt;/span&gt; ptr; &lt;span style="color: #008800; font-style: italic"&gt;// if use count goes to 0 on this object, &lt;/span&gt;
+    &lt;span style="color: #AA22FF; font-weight: bold"&gt;delete&lt;/span&gt; it 
+    ptr &lt;span style="color: #666666"&gt;=&lt;/span&gt; rhs.ptr; &lt;span style="color: #008800; font-style: italic"&gt;// copy the U_Ptr object &lt;/span&gt;
+    val &lt;span style="color: #666666"&gt;=&lt;/span&gt; rhs.val; &lt;span style="color: #008800; font-style: italic"&gt;// copy the int member &lt;/span&gt;
+    &lt;span style="color: #AA22FF; font-weight: bold"&gt;return&lt;/span&gt; &lt;span style="color: #666666"&gt;*&lt;/span&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;this&lt;/span&gt;; 
+} 
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -778,7 +832,7 @@ static &#25968;&#25454;&#25104;&#21592;&#30340;&#26512;&#26500;&#20989;&#25968;&
 &#26368;&#21518;&#19968;&#20010;&#23545;&#35937;&#65292;&#23601;&#21024;&#38500;&#35813;&#23545;&#35937;&#65292;&#36825;&#20250;&#20381;&#27425;&#25764;&#38144; int &#22522;&#30784;&#23545;&#35937;&#12290;&#23558;&#24038;&#25805;&#20316;&#25968;&#20013;&#30340;
 &#24403;&#21069;&#20540;&#20943; 1&#65288;&#21487;&#33021;&#25764;&#38144;&#35813;&#23545;&#35937;&#65289;&#20043;&#21518;&#65292;&#20877;&#23558;&#25351;&#38024;&#20174; rhs &#22797;&#21046;&#21040;&#36825;&#20010;&#23545;&#35937;&#12290;&#36171;&#20540;
 &#29031;&#24120;&#36820;&#22238;&#23545;&#36825;&#20010;&#23545;&#35937;&#30340;&#24341;&#29992;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&#36825;&#20010;&#36171;&#20540;&#25805;&#20316;&#31526;&#22312;&#20943;&#23569;&#24038;&#25805;&#20316;&#25968;&#30340;&#20351;&#29992;&#35745;&#25968;&#20043;&#21069;&#20351; rhs &#30340;&#20351;&#29992;&#35745;&#25968;&#21152; 1&#65292;&#20174;&#32780;&#38450;&#27490;&#33258;&#36523;&#36171;&#20540;&#12290;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&#36825;&#20010;&#36171;&#20540;&#25805;&#20316;&#31526;&#22312;&#20943;&#23569;&#24038;&#25805;&#20316;&#25968;&#30340;&#20351;&#29992;&#35745;&#25968;&#20043;&#21069;&#20351; rhs &#30340;&#20351;&#29992;&#35745;&#25968;&#21152; 1&#65292;&#20174;&#32780;&#38450;&#27490;&#33258;&#36523;&#36171;&#20540;&#12290;
 &lt;/pre&gt;&lt;/div&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/c++_primer_note_13_copy</guid><pubDate>Mon, 06 Sep 2010 20:02:00 GMT</pubDate></item><item><title>C++Primer &#31508;&#35760; 12&#31456; &#31867;</title><link>http://blog.wangfu.info/article/c++_primer_note_12_class</link><description>&lt;h3&gt;C++Primer &#31508;&#35760; 12&#31456; &#31867;&lt;/h3&gt;
 &lt;h4&gt;12&#31456; &#31867;&lt;/h4&gt;
 &lt;h5&gt;&#31867;&#30340;&#21021;&#22987;&#21270;&#65306;&lt;/h5&gt;
@@ -789,7 +843,7 @@ static &#25968;&#25454;&#25104;&#21592;&#30340;&#26512;&#26500;&#20989;&#25968;&
 &lt;/ul&gt;
 &lt;h5&gt;&#26500;&#36896;&#20989;&#25968;&#30340;&#25191;&#34892;&#36807;&#31243;&#65306;&lt;/h5&gt;
 &lt;p&gt;&#39318;&#20808;&#40664;&#35748;&#26500;&#36896;&#25152;&#26377;&#25104;&#21592;&#65292;&#20351;&#29992;&#21021;&#22987;&#21270;&#21015;&#34920;&#21021;&#22987;&#21270;&#25104;&#21592;&#21464;&#37327;&#65292;&#28982;&#21518;&#25191;&#34892;&#26500;&#36896;&#20989;&#25968;&#30340;&#20989;&#25968;&#20307;&#12290;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&#25152;&#20197;&#37027;&#20123;&#26080;&#27861;&#36827;&#34892;&#36171;&#20540;&#65292;&#25110;&#26080;&#27861;&#30001;&#31995;&#32479;&#33258;&#24049;&#21021;&#22987;&#21270;&#30340;&#25104;&#21592;&#24517;&#39035;&#22312;&#21021;&#22987;&#21270;&#21015;&#34920;&#20013;&#36827;&#34892;&#21021;&#22987;&#21270;&#12290;  
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&#25152;&#20197;&#37027;&#20123;&#26080;&#27861;&#36827;&#34892;&#36171;&#20540;&#65292;&#25110;&#26080;&#27861;&#30001;&#31995;&#32479;&#33258;&#24049;&#21021;&#22987;&#21270;&#30340;&#25104;&#21592;&#24517;&#39035;&#22312;&#21021;&#22987;&#21270;&#21015;&#34920;&#20013;&#36827;&#34892;&#21021;&#22987;&#21270;&#12290;  
 &#21021;&#22987;&#21270;const&#21644;&#24341;&#29992;&#31867;&#22411;&#25968;&#25454;&#25104;&#21592;&#30340;&#21807;&#19968;&#26426;&#20250;&#23601;&#26159;&#22312;&#26500;&#36896;&#20989;&#25968;&#30340;&#21021;&#22987;&#21270;&#21015;&#34920;&#20013;&#12290;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -797,11 +851,11 @@ static &#25968;&#25454;&#25104;&#21592;&#30340;&#26512;&#26500;&#20989;&#25968;&
 &lt;h5&gt;static&#25104;&#21592;&#30340;&#21021;&#22987;&#21270;&lt;/h5&gt;
 &lt;p&gt;&#31867;&#20013;&#30340;static&#25104;&#21592;&#19968;&#33324;&#19981;&#33021;&#22312;&#31867;&#30340;&#23450;&#20041;&#20307;&#65288;&#19968;&#33324;&#23601;&#26159;&#22768;&#26126;&#65289;&#20013;&#21021;&#22987;&#21270;&#65292;&#30456;&#21453;&#30340;&#65292;static&#25968;&#25454;&#25104;&#21592;&#36890;&#24120;&#22312;&#23450;&#20041;&#26102;&#25165;&#21021;&#22987;&#21270;&#65288;&#36890;&#24120;&#22312;cpp&#20013;&#65289;&#12290;      &lt;br /&gt;
 &#20363;&#22806;&#30340;&#26159;&#65292;&#29992;&#24120;&#37327;&#34920;&#36798;&#24335;&#21021;&#22987;&#21270;&#26159;&#21487;&#20197;&#22312;&#23450;&#20041;&#20307;&#20013;&#36827;&#34892;&#30340;&#65292;&#27604;&#22914;&#25972;&#22411;&#30340;const static&#25968;&#25454;&#25104;&#21592;&#21487;&#20197;&#20877;&#31867;&#30340;&#23450;&#20041;&#20307;&#20013;&#21021;&#22987;&#21270;&#12290;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Account&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nl"&gt;public:&lt;/span&gt;
-        &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;double&lt;/span&gt; &lt;span class="n"&gt;rate&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;interestRate&lt;/span&gt;&lt;span class="p"&gt;;}&lt;/span&gt;
-        &lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;interestRate&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;30&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;class&lt;/span&gt; &lt;span style="color: #0000FF"&gt;Account&lt;/span&gt; {
+    &lt;span style="color: #A0A000"&gt;public:&lt;/span&gt;
+        &lt;span style="color: #AA22FF; font-weight: bold"&gt;static&lt;/span&gt; &lt;span style="color: #00BB00; font-weight: bold"&gt;double&lt;/span&gt; rate() {&lt;span style="color: #AA22FF; font-weight: bold"&gt;return&lt;/span&gt; interestRate;}
+        &lt;span style="color: #AA22FF; font-weight: bold"&gt;static&lt;/span&gt; &lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt; &lt;span style="color: #00BB00; font-weight: bold"&gt;int&lt;/span&gt; interestRate &lt;span style="color: #666666"&gt;=&lt;/span&gt; &lt;span style="color: #666666"&gt;30&lt;/span&gt;;
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -816,8 +870,8 @@ static &#25968;&#25454;&#25104;&#21592;&#30340;&#26512;&#26500;&#20989;&#25968;&
 &lt;/ol&gt;
 &lt;p&gt;&#23454;&#38469;&#19978;&#65292;&#36825;&#19982;&#20989;&#25968;&#30340;&#26412;&#24847;&#26159;&#19981;&#30456;&#31526;&#30340;&#65292;&#25105;&#20204;&#24212;&#35813;&#23613;&#37327;&#36991;&#20813;&#36825;&#31181;&#24773;&#20917;&#30340;&#21457;&#29983;&#12290;     &lt;br /&gt;
 &#20026;&#27492;&#65292;&#25105;&#20204;&#21487;&#20197;&#20351;&#29992;&lt;code&gt;explicit&lt;/code&gt;&#20851;&#38190;&#23383;&#26469;&#22768;&#26126;&#26576;&#26500;&#36896;&#20989;&#25968;&#19981;&#21487;&#29992;&#20110;&#38544;&#24335;&#36716;&#25442;&#12290;&#20351;&#29992;explicit&#21518;&#23558;&#26080;&#27861;&#22312;&#20219;&#20309;&#24773;&#20917;&#19979;&#20351;&#29992;&#38544;&#24335;&#36716;&#25442;&#65292;&#38656;&#35201;&#24910;&#37325;&#20351;&#29992;&#12290;&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;EXP&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nl"&gt;public:&lt;/span&gt;
-        &lt;span class="k"&gt;explicit&lt;/span&gt; &lt;span class="n"&gt;EXP&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;Name&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="codehilite" style="background: #f8f8f8"&gt;&lt;pre style="line-height: 125%"&gt;&lt;span style="color: #AA22FF; font-weight: bold"&gt;class&lt;/span&gt; &lt;span style="color: #0000FF"&gt;EXP&lt;/span&gt; {
+    &lt;span style="color: #A0A000"&gt;public:&lt;/span&gt;
+        &lt;span style="color: #AA22FF; font-weight: bold"&gt;explicit&lt;/span&gt; EXP(&lt;span style="color: #AA22FF; font-weight: bold"&gt;const&lt;/span&gt; std&lt;span style="color: #666666"&gt;::&lt;/span&gt;string &lt;span style="color: #666666"&gt;&amp;amp;&lt;/span&gt;Name);
+}
 &lt;/pre&gt;&lt;/div&gt;</description><guid isPermaLink="true">http://blog.wangfu.info/article/c++_primer_note_12_class</guid><pubDate>Sat, 04 Sep 2010 19:02:00 GMT</pubDate></item></channel></rss>

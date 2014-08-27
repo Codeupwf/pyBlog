@@ -109,6 +109,6 @@ def getArticleContent(filePath, urlPrefix, showMore):
     if title:
         ret['title'] = title
         ret['date'] = date
-        ret['content'] = Markup(markdown.markdown(content,extensions=['codehilite(guess_lang=False)','fenced_code']))   #代码高亮
+        ret['content'] = Markup(markdown.markdown(content,extensions=['codehilite(guess_lang=False, noclasses=True, pygments_style=emacs)','fenced_code']))   #代码高亮
         ret['name'] = filePath.split(os.sep)[-1].split('.')[0]
     return ret
