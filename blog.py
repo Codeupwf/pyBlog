@@ -10,24 +10,27 @@ from flask import Flask, request, g, \
 from flask.ext.cache import Cache
 
 # configuration
-DEBUG = True
 TITLE = 'Wang Fu'
 URL = 'http://blog.wangfu.info'
 POST_DIR = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'posts'
 RSS_PATH = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'rss.xml'
-FORMAT = '%(asctime)-15s [%(pathname)s:%(lineno)d]: %(message)s'
+LOG_FORMAT = '%(asctime)-15s [%(pathname)s:%(lineno)d]: %(message)s'
 
 # create app
 app = Flask(__name__)
 app.config.from_object(__name__)
 app.config.from_envvar('SETTINGS', silent=True)
-app.debug_log_format = FORMAT
+app.debug_log_format = LOG_FORMAT
 
 # create cache instance
 cache = Cache(app, config={"CACHE_TYPE": "simple"})
 
 
 def articleFileRender(filePath, showMore):
+    '''渲染单篇文章
+
+    filePath: 文章绝对路径
+    showMore: 是否显示--More--标签之后的内容'''
     return getArticleContent(filePath, app.config["URL"] + "/article/", showMore)
 
  
