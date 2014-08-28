@@ -4,9 +4,10 @@ import codecs
 import datetime
 import PyRSS2Gen
 import markdown
-from article import getArticleContent, sortArticleListByTime
+from article import getArticleContent, sortArticleListByTime, getMarkdownArticleContent, \
+    createTmpTxtFile
 from flask import Flask, request, g, \
-    render_template, flash, Markup
+    render_template, flash, Markup, send_from_directory,send_file
 from flask.ext.cache import Cache
 
 # configuration
@@ -99,7 +100,6 @@ def getPageByIndex(Index):
     return tmprender
 
 @app.route(r'/', methods=['GET'])
-# @cache.cached()
 def index():
     '''显示主页'''
     app.logger.debug(request.path)
@@ -117,6 +117,15 @@ def article(articleID):
         articleID.replace('.', '') + '.markdown'
     article = articleFileRender(postPath, True)
     return render_template("singleArticle.html", title=app.config['TITLE'], url=app.config['URL'], article=article)
+
+@app.route(r'/posts/<articleID>.txt')
+@app.route(r'/posts/<articleID>')
+def sourceArticle(articleID):
+    '''显示单页文章Markdown原文'''
+    postPath = app.config["POST_DIR"] + os.sep + \
+        articleID.replace('.', '') + '.markdown'
+    article = getMarkdownArticleContent(postPath, True)
+    return send_file(createTmpTxtFile(postPath))
 
 
 @app.errorhandler(404)

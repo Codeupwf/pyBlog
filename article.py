@@ -25,6 +25,8 @@ from flask import Markup
 
 STR_MORE_BEGIN = '[***More...***]('
 STR_MORE_END = ')       '
+TMP_DIR = os.path.dirname(os.path.abspath(__file__)) + os.sep + 'tmp'
+
 
 def sortArticleListByTime(fileList, reverse = False):
     '''根据文章中的时间戳来对文章列表进行排序。
@@ -112,3 +114,86 @@ def getArticleContent(filePath, urlPrefix, showMore):
         ret['content'] = Markup(markdown.markdown(content,extensions=['codehilite(guess_lang=False, noclasses=True, pygments_style=emacs)','fenced_code']))   #代码高亮
         ret['name'] = filePath.split(os.sep)[-1].split('.')[0]
     return ret
+
+def createTmpTxtFile(filePath, tmpDir = TMP_DIR):
+    '''创建临时的txt文件，并将filePath指向的文件内容写入临时文件。
+
+    根据文件内容，创建临时的后缀为.txt的临时文件，并将原文件内容写入临时文件。当临时目录存在重名临时文件时进行先删除后新建操作。
+    filePath：源文件路径
+    tmpDir：临时文件夹路径'''
+    f = codecs.open(filePath, mode='r', encoding='utf-8')
+    lines = []
+    try:
+        lines = f.readlines()
+    except:
+        pass
+    f.close()
+    strTmpFileName = TMP_DIR + os.sep + filePath.split(os.sep)[-1].split('.')[0] + '.txt'
+    if os.path.isfile(strTmpFileName):
+        os.remove(strTmpFileName)
+    f = codecs.open(strTmpFileName, mode='aw', encoding='utf-8')
+    # raise EOFError
+    print strTmpFileName
+    try:
+        f.writelines(lines)
+    except Exception, e:
+        f.close()
+        raise e
+    f.close()
+    return strTmpFileName
+
+
+def getMarkdownArticleContent(filePath, displayShowMoreLable):
+    '''获取文章Markdown原文。
+
+    获取指定路径下单篇文章的Markdown原文。
+    filePath: 绝对路径，用于打开文件和构造文件名称（e.g. /Users/Codeup/Documents/Coding/Projects/pyBlog/posts/2014-08-03-include-file-in-compile.markdown）
+    displayShowMoreLable: 是否将“--more--”标签显示到原文中。'''
+    f = codecs.open(filePath, mode='r', encoding='utf-8')
+    # link = urlPrefix + filePath.split(os.sep)[-1].split('.')[0]     #链接地址，用于构造more超链接
+    lines = []
+    try:
+        lines = f.readlines()
+    except:
+        pass
+    f.close()
+    ret = {}
+    title = ''
+    date = ''
+    index = 1
+    for line in lines[1:]:
+        index += 1
+        if line.find('title: ') == 0:
+            title = line.replace('title: "', '')[0:-2]      #解析标题
+        if line.find('date: ') == 0:
+            date = line.replace('date: ', '')[0:-1]     #解析时间戳
+        if line.find('---') == 0:
+            break       #解析到 --- 认为通用标签结束，进入正文解析流程
+    content = u''
+    for line in lines[index:]:
+        if line.find('--more--') == 0:      #解析到 --more--
+            if not displayShowMoreLable:
+                continue     #如果displayShowMoreLable为假，则跳过 --more-- ，继续将后面的正文返回
+            else:
+                  #如果displayShowMoreLable为真，则什么都不干
+                pass
+        content += line    
+    if title:
+        ret['title'] = title
+        ret['date'] = date
+        ret['content'] = content
+        ret['name'] = filePath.split(os.sep)[-1].split('.')[0]
+    return ret
+    pass
+
+
+
+
+
+
+
+
+
+
+
+
