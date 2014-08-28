@@ -1,6 +1,6 @@
 * {
 	background: transparent;
-	margin: 0;
+	/*margin: 0;*/
 	border: 0;
 	padding: 0;
 	vertical-align: baseline;
@@ -144,7 +144,7 @@ footer {
 	text-align: center;
 }
 article p {
-	margin: 0 0 24px 0;
+	/*margin: 0 0 24px 0;*/
 	line-height: 1.5em;
 }
 
