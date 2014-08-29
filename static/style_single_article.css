@@ -108,6 +108,11 @@ article {
         color:#080;
         font-size: small;
 }
+/*a#show-source-a:visited {
+    color: red;
+}*/
+a#show-source-a:hover{ color: #5191C2;}
+a#show-source-a:visited{ color: #0b0080; }
 a#show-source-a {
     font-size: small;
     color: #777777;
