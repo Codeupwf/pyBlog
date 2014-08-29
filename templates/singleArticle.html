@@ -42,8 +42,10 @@
     <!-- article start -->
     <article>
       <div class="entry-header">
-        <h1 class="entry-title dasbottom"><a href="/article/{{ article["name"] }}">{{ article["title"] }}</a></h1>
-        
+        <h1 class="entry-title dasbottom">
+          <a href="/article/{{ article["name"] }}">{{ article["title"] }}</a>
+          <div id="show-source"><a id="show-source-a" href="/posts/{{ article["name"] }}.txt">显示文章源码</a></div>
+        </h1>
         <div class="entry-meta">
           <span class="sep">Posted on <time class="entry-date">{{ article["date"] }}</time></a></span>
         </div>
@@ -80,6 +82,7 @@
 
  <!-- footer end -->
   </div>
+  <!-- content end -->
 </div>
 
 <script type="text/javascript">

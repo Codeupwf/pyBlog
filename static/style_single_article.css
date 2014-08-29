@@ -97,11 +97,20 @@ article {
     font-size: 25px;
     line-height: 1.5em;
     -webkit-transition: color 400ms;
-
 }
 .entry-title a:hover {
 
     color:#5191C2;
+}
+#show-source{
+        float:right;
+        padding: 20px 5px 0;
+        color:#080;
+        font-size: small;
+}
+a#show-source-a {
+    font-size: small;
+    color: #777777;
 }
 .entry-meta {
     color: #666;

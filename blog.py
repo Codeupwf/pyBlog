@@ -110,7 +110,7 @@ def index():
 
 
 @app.route(r'/article/<articleID>')
-@cache.cached()
+# @cache.cached()
 def article(articleID):
     '''显示单页文章'''
     postPath = app.config["POST_DIR"] + os.sep + \
@@ -124,7 +124,7 @@ def sourceArticle(articleID):
     '''显示单页文章Markdown原文'''
     postPath = app.config["POST_DIR"] + os.sep + \
         articleID.replace('.', '') + '.markdown'
-    article = getMarkdownArticleContent(postPath, True)
+    # article = getMarkdownArticleContent(postPath, True)
     return send_file(createTmpTxtFile(postPath))
 
 
