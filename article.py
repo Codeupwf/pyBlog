@@ -91,12 +91,19 @@ def getArticleContent(filePath, urlPrefix, showMore):
     title = ''
     date = ''
     index = 1
+    isCommentsAble = True
     for line in lines[1:]:
         index += 1
         if line.find('title: ') == 0:
             title = line.replace('title: "', '')[0:-2]      #解析标题
         if line.find('date: ') == 0:
             date = line.replace('date: ', '')[0:-1]     #解析时间戳
+        if line.find('comments: ') == 0:
+            strCommentsAble = line.replace('comments: ','')[0:-1]   #解析评论支持
+            if strCommentsAble == 'True' or strCommentsAble == 'true':
+                isCommentsAble = True
+            else:
+                isCommentsAble = False
         if line.find('---') == 0:
             break       #解析到 --- 认为通用标签结束，进入正文解析流程
     content = u''
@@ -113,6 +120,7 @@ def getArticleContent(filePath, urlPrefix, showMore):
         ret['date'] = date
         ret['content'] = Markup(markdown.markdown(content,extensions=['codehilite(guess_lang=False, noclasses=True, pygments_style=emacs)','fenced_code']))   #代码高亮
         ret['name'] = filePath.split(os.sep)[-1].split('.')[0]
+        ret['isCommentsAble'] = isCommentsAble
     return ret
 
 def createTmpTxtFile(filePath, tmpDir = TMP_DIR):
