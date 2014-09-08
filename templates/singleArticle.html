@@ -5,7 +5,7 @@
   <title>{{ title }} - {{ article["title"] }}</title>
   <link rel = "Shortcut Icon"  href="/static/favicon.ico">
   <link rel="stylesheet" href="{{ url_for('static', filename='style_single_article.css') }}" type="text/css" media="screen">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style_code.css') }}" type="text/css" media="screen">
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style_code.css') }}" type="text/css" media="screen"> -->
   <!-- <link href='http://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'> -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
 </head>
@@ -43,8 +43,10 @@
     <article>
       <div class="entry-header">
         <h1 class="entry-title dasbottom">
-          <a href="/article/{{ article["name"] }}">{{ article["title"] }}</a>
+          <a id="Title" href="/article/{{ article["name"] }}">{{ article["title"] }}</a>
+          {% if article["isPrivate"] != True %}
           <div id="show-source"><a id="show-source-a" href="/posts/{{ article["name"] }}.txt" target="_blank">显示文章源码</a></div>
+          {% endif %}
         </h1>
         <div class="entry-meta">
           <span class="sep">Posted on <time class="entry-date">{{ article["date"] }}</time></a></span>
@@ -52,7 +54,23 @@
       </div>
           
       <div class="entry-content">
-        {{ (article["content"]) }}
+        {% if article["isPrivate"] == True %}
+        <p id="refreshTag" />
+        <div id="submit_pwd_form" style = "text-align: center;">
+          <!-- <form name="fmShowPrivate" method="post" action="{{ url }}/article/{{ article["name"] }}"> -->
+          <!-- <form name="fmShowPrivate" method="post" action="http://127.0.0.1:5000/article/{{ article["name"] }}">
+            <input id="fmPWD" type="password" name="password" >
+            <input id="fmBTN" type="button" name="button" value="提交" onclick="javascript:{document.fmShowPrivate.submit();}">
+          </form> -->
+          <input id="fmPWD" type="password" name="password" >
+          <input id="fmBTN" type="button" name="button" value="提交">
+          <div style = "text-align: center;">
+            <span id="result"></span>
+          </div>
+        </div>
+        {% else %}
+          {{ (article["content"]) }}
+        {% endif %}
       </div>
     </article>
     <!-- article end -->
@@ -110,5 +128,49 @@
 
 </script>
     
+<script type=text/javascript src="{{
+url_for('static', filename='jquery-1.11.1.min.js') }}">
+</script>
+
+<script type=text/javascript>
+  $(function() {
+    var submit_form = function(e) {
+      $.post("/users/{{ article["name"] }}", {
+        password: $('input[id="fmPWD"]').val()
+      }, function(data) {
+        if (data.isSuccess == 1) {
+          GetIt(data);
+        }
+        else{
+          $('#result').text(data.result);
+          $('input[id=fmPWD]').focus();
+        };
+      });
+      return false;
+    };
+
+    //根据data中的返回数据刷新页面，将内容显示出来，同时将提交框去除。
+    function GetIt(data) {
+      var oNewContent = $(data.content);   //创建Dom元素
+      oNewContent.insertAfter("#refreshTag");   //insertAfter()方法
+
+      var oNewShowSource = $('<div id="show-source"><a id="show-source-a" href="/posts/{{ article["name"] }}.txt" target="_blank">显示文章源码</a></div>');
+      oNewShowSource.insertAfter("#Title");
+
+      $('#submit_pwd_form').remove();
+    }
+
+    $('input[id=fmBTN]').bind('click', submit_form);
+
+    $('input[id=fmPWD]').bind('keydown', function(e) {
+      if (e.keyCode == 13) {
+        submit_form(e);
+      }
+    });
+
+    $('input[id=fmPWD]').focus();
+  });
+</script>
+
 </body>
 </html>

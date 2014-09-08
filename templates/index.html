@@ -50,7 +50,13 @@
 					</div>
 					
 					<div class="entry-content">
-						{{ (article["content"]) }}
+				        {% if article["isPrivate"] == True %}
+				        <div style = "text-align: center;">
+				          本篇文章不对外开放
+				        </div>
+				        {% else %}
+				          {{ (article["content"]) }}
+				        {% endif %}
 					</div>
 					
 				</article>

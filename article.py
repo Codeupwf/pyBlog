@@ -92,6 +92,7 @@ def getArticleContent(filePath, urlPrefix, showMore):
     date = ''
     index = 1
     isCommentsAble = True
+    isPrivate = False
     for line in lines[1:]:
         index += 1
         if line.find('title: ') == 0:
@@ -104,6 +105,12 @@ def getArticleContent(filePath, urlPrefix, showMore):
                 isCommentsAble = True
             else:
                 isCommentsAble = False
+        if line.find('private: ') == 0:
+            strIsPrivate = line.replace('private: ', '')[0:-1]  #解析私密文章
+            if strIsPrivate == 'True' or strIsPrivate == 'true':
+                isPrivate = True
+            else:
+                isPrivate = False
         if line.find('---') == 0:
             break       #解析到 --- 认为通用标签结束，进入正文解析流程
     content = u''
@@ -121,6 +128,7 @@ def getArticleContent(filePath, urlPrefix, showMore):
         ret['content'] = Markup(markdown.markdown(content,extensions=['codehilite(guess_lang=False, noclasses=True, pygments_style=emacs)','fenced_code']))   #代码高亮
         ret['name'] = filePath.split(os.sep)[-1].split('.')[0]
         ret['isCommentsAble'] = isCommentsAble
+        ret['isPrivate'] = isPrivate
     return ret
 
 def createTmpTxtFile(filePath, tmpDir = TMP_DIR):

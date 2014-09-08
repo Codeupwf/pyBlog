@@ -4,6 +4,7 @@ title: "Unix 下的文件连接"
 date: 2013-12-01 00:39:11
 comments: true
 categories: Unix CLI
+private: true
 ---
 
 ### Unix 下的文件连接

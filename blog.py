@@ -7,8 +7,9 @@ import markdown
 from article import getArticleContent, sortArticleListByTime, getMarkdownArticleContent, \
     createTmpTxtFile
 from flask import Flask, request, g, \
-    render_template, flash, Markup, send_from_directory,send_file
+    render_template, flash, Markup, send_from_directory,send_file, redirect, url_for, jsonify
 from flask.ext.cache import Cache
+from users import valid_password
 
 # configuration
 TITLE = 'Wang Fu'
@@ -22,6 +23,7 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 app.config.from_envvar('SETTINGS', silent=True)
 app.debug_log_format = LOG_FORMAT
+app.secret_key = 'some_secret'
 
 # create cache instance
 cache = Cache(app, config={"CACHE_TYPE": "simple"})
@@ -118,13 +120,26 @@ def article(articleID):
     article = articleFileRender(postPath, True)
     return render_template("singleArticle.html", title=app.config['TITLE'], url=app.config['URL'], article=article)
 
+@app.route(r'/users/<articleID>', methods=['POST'])
+def showPrivateArticle(articleID):
+    '''显示私密单页的文章'''
+    app.logger.debug("showPrivateArticle begin")
+    if not valid_password(request.form["password"]):
+        error = 'Invalid password'
+        app.logger.debug(error)
+        return jsonify(result = error, isSuccess = 0)
+    postPath = app.config["POST_DIR"] + os.sep + \
+        articleID.replace('.', '') + '.markdown'
+    article = articleFileRender(postPath, True)
+    article['isPrivate'] = False
+    return jsonify(content = article["content"], isSuccess = 1)
+
 @app.route(r'/posts/<articleID>.txt')
 @app.route(r'/posts/<articleID>')
 def sourceArticle(articleID):
     '''显示单页文章Markdown原文'''
     postPath = app.config["POST_DIR"] + os.sep + \
         articleID.replace('.', '') + '.markdown'
-    # article = getMarkdownArticleContent(postPath, True)
     return send_file(createTmpTxtFile(postPath))
 
 
