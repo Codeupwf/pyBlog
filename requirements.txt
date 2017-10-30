@@ -1,7 +1,7 @@
 Flask==0.9
 markdown
 tornado==1.2.1
-uWSGI==1.4.4
+uWSGI==1.4.9
 PyRSS2Gen
 pygments
 Flask-Cache
